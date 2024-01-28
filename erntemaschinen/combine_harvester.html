@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Mähdrescher</title>
+    <link rel="icon" href="../img/main_logo.ico" />
+  </head>
+  <body>
+    <header class="shiny-header">
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img
+              class="pic"
+              src="../img/main_logo.ico"
+              alt="Erntemaschinen-Logo"
+            />
+            Mähdrescher
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodenteechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--  -->
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_mäh"
+          src="../img/MF_IDEAL_8_8T_WORK_FR_0722_07_Felix_edit_IDEAL-2.jpg"
+          alt="Mähdrescher_main_imgag_lexion"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>Mähdrescher: Pioniere der Effizienz in der Landwirtschaft</h1>
+        <p>
+          Mähdrescher repräsentieren eine bahnbrechende Innovation in der
+          Landwirtschaft. Ihr Einfluss auf die Ernte von Getreide hat die
+          Effizienz und Produktivität auf den Feldern weltweit revolutioniert.
+        </p>
+        <h2>Was charakterisiert einen Mähdrescher?</h2>
+        <p>
+          Ein Mähdrescher ist eine hochspezialisierte Maschine, entworfen für
+          die Ernte von Getreidekulturen wie Weizen, Mais, Sojabohnen und Reis.
+          Der Name "Mähdrescher" leitet sich von den drei zentralen Prozessen
+          ab, die die Maschine ausführt: Mähen (Abschneiden der Pflanze),
+          Dreschen (Trennen der Körner oder Samen vom Stiel) und Reinigen
+          (Entfernen von überschüssigem Stroh und anderen Rückständen).
+        </p>
+        <h2>Die Funktionsweise im Detail</h2>
+        <p>
+          Ein Mähdrescher arbeitet in mehreren aufeinanderfolgenden Schritten.
+          Zuerst schneidet er die Pflanzen mit scharfen Schneidwerkzeugen ab.
+          Diese abgeschnittenen Pflanzen gelangen dann in die Maschine, wo sie
+          gedroschen werden. Dieser Prozess trennt die Körner von den Stielen.
+          Abschließend erfolgt die Reinigung der Körner, wobei überschüssiges
+          Material entfernt wird und die gereinigten Körner in einem Behälter
+          gesammelt werden, während das restliche Material aus der Rückseite der
+          Maschine ausgestoßen wird.
+        </p>
+        <h2>Die Bedeutung dieser Technologie</h2>
+        <p>
+          Mähdrescher haben die Landwirtschaft durch die erhebliche Reduzierung
+          von Zeit und Arbeitsaufwand für die Ernte revolutioniert. Vor der
+          Einführung des Mähdreschers war die Ernte eine mühsame und
+          arbeitsintensive Aufgabe, die oft viele Arbeitskräfte erforderte. Dank
+          des Mähdreschers können Landwirte nun große Flächen schnell und
+          effizient ernten, was zu höheren Erträgen und einer insgesamt
+          effizienteren Landwirtschaft führt.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Mähdrescher sind unverzichtbare Werkzeuge in der modernen
+          Landwirtschaft. Ihre Revolution in der Getreideernte trägt maßgeblich
+          dazu bei, die wachsende Weltbevölkerung zu ernähren. Durch
+          kontinuierliche Innovationen werden Mähdrescher auch in Zukunft eine
+          zentrale Rolle in der Landwirtschaft spielen und dabei helfen, die
+          Herausforderungen der Nahrungsmittelproduktion zu bewältigen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Mehr Infos zu den verschiedenen Mähdrescher</h1>
+      </div>
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/JohnDeereX9.avif"
+              alt="JohnDeereX9"
+              height="266px"
+            />
+            <div
+              onclick="toggleChipper('JohnDeereX9')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="JohnDeereX9" class="sized">
+                <ul>
+                  <li><strong>Durchsatz:</strong> 100 t/h</li>
+                  <li><strong>Arbeitsbreite:</strong> 13,7 m</li>
+                  <li><strong>Kanalbreite:</strong> 1720 mm</li>
+                  <li><strong>Effektiver Druschbereich:</strong> 4,00 m²</li>
+                  <li><strong>Rotor-Abscheidefläche:</strong> 22,50 m²</li>
+                  <li><strong>Siebkastenfläche:</strong> 7,00 m²</li>
+                  <li>
+                    <strong>Motorleistung:</strong> 470 kW/639 PS
+                    (13,6-Liter-Motor)
+                  </li>
+                  <li><strong>Kraftstofftankvolumen:</strong> 14 h</li>
+                  <li><strong>Sicherheit:</strong> 24-7</li>
+                  <li><strong>Kabine:</strong> Neue, leise Ausführung</li>
+                  <li>
+                    <strong>Automatisierung:</strong> Combine Advisor für
+                    stressfreie Bedienung
+                  </li>
+                  <li><strong>Konnektivität:</strong> JDLink, DataConnect</li>
+                  <li><strong>Farmmanagement:</strong> Operations Center</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>John Deere X9</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/fiches_Claas_Trion_HD-1000x562.jpg"
+              height="266px"
+              alt="Claas-Trion"
+            />
+            <div
+              onclick="toggleChipper('Claas_Trion_750')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="Claas_Trion_750" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 320 kW</li>
+                  <li><strong>Serien:</strong> Trion</li>
+                  <li>
+                    <strong>Bereifung:</strong> TA 680/85 R32 vorne, LA 500/85
+                    R24 hinten
+                  </li>
+                  <li><strong>Dreschsystem:</strong> T</li>
+                  <li><strong>Korntankgröße:</strong> 12000 l</li>
+                  <li><strong>Schneidwerkbreite:</strong> 7.7 m</li>
+                  <li><strong>Lenkung:</strong> HH</li>
+                  <li><strong>Getriebeart:</strong> h</li>
+                  <li><strong>Eigengewicht:</strong> 17 t</li>
+                  <li><strong>Motorhersteller:</strong> Cummins</li>
+                  <li><strong>Motortyp:</strong> L9</li>
+                  <li><strong>Hubraum:</strong> 8.9 l</li>
+                  <li><strong>Zylinderanzahl:</strong> 6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Claas Trion 570</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/massey_fugerson.webp" alt="Massey Ferguson" />
+            <div
+              onclick="toggleChipper('massey_fugerson_ideal_mf')"
+              class="symbol_info"
+              data-chipper="massey_fugerson_ideal_mf"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="massey_fugerson_ideal_mf" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 483 kW</li>
+                  <li><strong>Serien:</strong> IDEAL</li>
+                  <li>
+                    <strong>Bereifung:</strong> VR 800/70 R38 vorne, HR 620/70
+                    R26 hinten
+                  </li>
+                  <li><strong>Dreschsystem:</strong> R</li>
+                  <li><strong>Rotor Ø:</strong> 600 mm</li>
+                  <li><strong>Korntankgröße:</strong> 17500 l</li>
+                  <li><strong>Schneidwerkbreite:</strong> 12.2 m</li>
+                  <li><strong>Lenkung:</strong> HH</li>
+                  <li><strong>Getriebeart:</strong> h</li>
+                  <li><strong>Motorhersteller:</strong> MAN</li>
+                  <li><strong>Hubraum:</strong> 15.2 l</li>
+                  <li>
+                    <strong>Drehzahl bei max. Drehmoment:</strong> 1900 rpm
+                  </li>
+                  <li><strong>Zylinderanzahl:</strong> 6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Massey Ferguson MF IDEAL</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/CR_10.90.webp" alt="CR_10.90" />
+            <div
+              onclick="toggleChipper('New_Holland_CR_10')"
+              class="symbol_info"
+              data-chipper="New_Holland_CR_10"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="New_Holland_CR_10" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 480 kW</li>
+                  <li><strong>Serien:</strong> CR</li>
+                  <li><strong>Bereifung:</strong> 24</li>
+                  <li><strong>Dreschsystem:</strong> R</li>
+                  <li><strong>Korntankgröße:</strong> 14500 l</li>
+                  <li><strong>Schneidwerkbreite:</strong> 7.63 m</li>
+                  <li><strong>Lenkung:</strong> HH</li>
+                  <li><strong>Getriebeart:</strong> h</li>
+                  <li><strong>Transportlänge:</strong> 9.97 m</li>
+                  <li><strong>Transportbreite:</strong> 3.49 m</li>
+                  <li><strong>Transporthöhe:</strong> 3.96 m</li>
+                  <li><strong>Motorhersteller:</strong> FPT</li>
+                  <li><strong>Motortyp:</strong> Cursor 16</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>New Holland CR 10.90 Revelation</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/lexion_8900.png"
+              alt="Lexion_8900"
+              height="250px"
+            />
+            <div
+              onclick="toggleChipper('Claas_Lexion_8900')"
+              class="symbol_info"
+              data-chipper="Claas_Lexion_8900"
+            >
+              ⓘ
+              <div id="Claas_Lexion_8900" class="sized">
+                <ul>
+                  <li>
+                    <strong>Motorleistung:</strong> Bis zu 790 PS / 581 kW
+                  </li>
+                  <li><strong>Dreschsystem:</strong> APS SYNFLOW HYBRID</li>
+                  <li><strong>Korntankgröße:</strong> 10.000 - 18.000 l</li>
+                  <li><strong>Transportbreite:</strong> 3.3 m</li>
+                  <li><strong>Transporthöhe:</strong> 4 m</li>
+                  <li><strong>Reinigungssystem:</strong> JET STREAM</li>
+                  <li>
+                    <strong>QUANTIMETER:</strong> Unabhängige Ertragsmessung
+                  </li>
+                  <li>
+                    <strong>Kabinendesign:</strong> Modern mit CEBIS Terminal
+                  </li>
+                  <li>
+                    <strong>CEMOS AUTOMATIC:</strong> Automatische
+                    Maschineneinstellungen
+                  </li>
+                  <li>
+                    <strong>DYNAMIC POWER:</strong> Flexible
+                    Motorleistungsanpassung
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Claas Lexion 8900</figcaption>
+        </figure>
+        <br />
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Videos zur Ballentechnik</h1>
+      </div>
+      <div class="Infobox">
+        <div class="videocontainer">
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/claas_lexion_mähdrescher.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/NewHolland CR11.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <br />
+      </div>
+      <br />
+      <br />
+    </section>
+    <!--  -->
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

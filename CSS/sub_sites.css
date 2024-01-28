@@ -1,0 +1,129 @@
+/* Main_Settings */
+
+.here {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.here:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+#main_banner_tr {
+  height: auto;
+  width: auto;
+}
+
+#main_banner_mäh {
+  height: 50%;
+  width: auto;
+}
+
+#main_banner_ge {
+  height: 960px;
+}
+
+.plh {
+  color: gray;
+  height: 40pt;
+}
+
+.plh h1 {
+  font-size: var(--headline-size);
+}
+
+/* Erntemaschinen insgesamt */
+
+.Infobox h1,
+.Infobox h2 {
+  margin: 20px 0 5px 20px;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pictures figcaption {
+  margin-top: 5px;
+  margin-left: 4px;
+}
+
+.pictures figcaption b {
+  font-size: var(--headline-size);
+}
+
+.pictures p,
+.pictures i,
+.pictures b {
+  padding: 20px;
+  font-size: 18pt;
+}
+
+#I {
+  flex-direction: row-reverse;
+}
+
+.pictures a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+#imgagebox figure:hover {
+  transform: scale(1.1);
+}
+
+#imgagebox figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#imgagebox figure:hover figcaption {
+  opacity: 1;
+}
+
+.info {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+
+.sized ul{
+  background-color: rgba(70, 64, 64, 0.479);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sized{
+  color: whitesmoke;
+  opacity: 0;
+  display: none;
+  border-radius: 10px;
+}
+
+.sized li{
+  color: whitesmoke;
+  list-style: none;
+}
+
+.sized strong{
+  color: lightgray;
+  font-size: 20pt;
+}
+
+/* Traktoren */
+
+/* Geräte */

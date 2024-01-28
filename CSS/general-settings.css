@@ -1,0 +1,151 @@
+/* General root */
+:root {
+  --background-color: #e7e7e7;
+  --second_background: #ccc4c4;
+  --text-color: #333;
+  --accent-color: #4caf50;
+  --navbar-height: 60px;
+  --footer-color: #43a800;
+  --link-color: blue;
+  --link-color-hover: rgb(31, 31, 160);
+  --infobox-color: #f5f5f5;
+  --img-height: 500px;
+  --img-width: auto;
+  --text-size: 25pt;
+  --headline-size: 28pt;
+  --second-headline-size: 28pt;
+  --footer-link-size: 50pt;
+  --footer-second-link-size: 40pt;
+  --logo-font-size: 40px;
+  --logo-width-size: 110px;
+  --logo-location: 2px
+}
+
+/* Dropdown root */
+:root{
+  --logo-location-top: 48px;
+  --nav-location: 30px;
+  --nav-li-width: 160px;
+  --nav-li-location-top: 14px;
+  --dropdown-width: 260px;
+  --height-dropdown-li: 70px;
+  --font-and-padding-size-dropdown: 10px;
+  --hamburger-location: 25px;
+  --border-radius: 100px;
+  --padding-size-expandable-li: 40px;
+  --expandable-li-nav-location-right: 20px;
+  --label-font-size: 25pt;
+  --general-font-size: 22px
+}
+
+:root{
+  --dropdown-li-font-size: 25pt
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-family: Farming;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 1s;
+  box-sizing: border-box;
+}
+
+footer {
+  height: 30%;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+#footer_links a {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: var(--footer-second-link-size);
+}
+
+#footer_links a:hover {
+  font-size: 45pt;
+  color: var(--footer-color);
+  text-decoration: underline;
+}
+
+#footer_links a:nth-of-type(1) {
+  margin-bottom: 30px;
+  font-size: var(--footer-link-size);
+  font-weight: bold;
+}
+
+section img, video {
+  box-shadow: 2px 2px 10px 2px #000000;
+  border-radius: 10px;
+}
+
+.videocontainer {
+  align-items: center;
+  gap: 200px;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+@font-face {
+  font-family: "Farming";
+  src: url("/Schriftarten/Balthazar-Regular.woff");
+}
+
+.Infobox p{
+  font-size: var(--text-size);
+}
+
+.Infobox h1{
+  font-size: var(--headline-size);
+}
+
+.Infobox h2{
+  font-size: var(--second-headline-size);
+}
+
+@media (max-width:920px) {
+  footer{
+    display: none;
+  }
+}
+/* 
+@keyframes shine {
+  0% {
+      transform: rotate(30deg) translate(-150%, -150%);
+  }
+  100% {
+      transform: rotate(30deg) translate(150%, 150%);
+  }
+}
+
+.shiny-header {
+  background: linear-gradient(135deg, #f0f0f0, #ddd, #f0f0f0);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.shiny-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0) 100%);
+  animation: shine 10s infinite linear;
+  transform: rotate(30deg);
+} */

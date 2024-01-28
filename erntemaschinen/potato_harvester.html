@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Kartoffelroder</title>
+    <link rel="icon" href="../img/main_logo.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img
+              class="pic"
+              src="../img/main_logo.ico"
+              alt="Erntemaschinen-Logo"
+            />
+            Kartoffelroder
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <!-- <a href="../erntemaschinen/index.html"> -->
+            <input type="checkbox" id="chapter2_checkbox" />
+            <label
+              onclick="ernte()"
+              id="label"
+              class="label_menu"
+              for="chapter2_checkbox"
+              >Erntemaschinen</label
+            >
+            <!-- </a
+            > -->
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Miststreuer</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--  -->
+    <section class="main">
+      <div id="main_banner">
+        <img
+          style="height: auto; width: 1300px"
+          id="main_banner_mäh"
+          src="../img/Vartion-270-platinum-terra-trac.webp"
+          alt="Vartion-270-platinum-terra-trac"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>
+          Kartoffelroder: Eine technologische Revolution in der Landwirtschaft
+        </h1>
+        <p>
+          Kartoffelroder sind eine der wichtigsten Innovationen in der
+          Landwirtschaft. Sie haben die Art und Weise, wie wir Kartoffeln
+          ernten, revolutioniert und die Effizienz und Produktivität auf den
+          Feldern weltweit gesteigert.
+        </p>
+        <h2>Was ist ein Kartoffelroder?</h2>
+        <p>
+          Ein Kartoffelroder ist eine Maschine, die speziell für die Ernte von
+          Kartoffeln entwickelt wurde. Der Name “Kartoffelroder” leitet sich von
+          den Prozessen ab, die die Maschine ausführt: Ausgraben (Ausgraben der
+          Kartoffel), Sammeln (Aufnehmen und Speichern der ausgegrabenen
+          Kartoffeln).
+        </p>
+        <h2>Wie funktioniert ein Kartoffelroder?</h2>
+        <p>
+          Ein Kartoffelroder arbeitet in mehreren Schritten. Zuerst gräbt er die
+          Kartoffeln mit einer speziellen Vorrichtung aus. Diese ausgegrabenen
+          Kartoffeln werden dann in die Maschine geführt, wo sie gesammelt
+          werden. Dieser Prozess erleichtert das Handling und den Transport der
+          Kartoffeln. Schließlich wird das Material in einem Behälter gesammelt,
+          während das restliche Material aus der Rückseite der Maschine
+          ausgestoßen wird.
+        </p>
+        <h2>Die Bedeutung von Kartoffelrodern</h2>
+        <p>
+          Kartoffelroder haben die Landwirtschaft revolutioniert, indem sie die
+          Zeit und den Arbeitsaufwand für die Ernte erheblich reduziert haben.
+          Vor der Erfindung des Kartoffelroders war die Ernte eine
+          zeitaufwändige und arbeitsintensive Aufgabe, die oft viele Arbeiter
+          erforderte. Mit dem Kartoffelroder können Landwirte jetzt große
+          Flächen schnell und effizient ernten, was zu höheren Erträgen und
+          einer effizienteren Landwirtschaft führt.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Kartoffelroder sind ein unverzichtbares Werkzeug in der modernen
+          Landwirtschaft. Sie haben die Art und Weise, wie wir Kartoffeln
+          ernten, revolutioniert und tragen dazu bei, die wachsende
+          Weltbevölkerung zu ernähren. Durch kontinuierliche Verbesserungen und
+          Innovationen werden Kartoffelroder auch in Zukunft eine wichtige Rolle
+          in der Landwirtschaft spielen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh"><h1>Mehr Infos zu den Kartoffelrodern</h1></div>
+
+      <br />
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/varitron_470_terra_trac_35.webp"
+              alt="Grimme Varitron 470 Gen3"
+            />
+            <div
+              onclick="toggleChipper('varitron_470')"
+              class="symbol_info"
+              data-chipper="varitron_470"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="varitron_470" class="sized">
+                <ul>
+                  <li><strong>Länge:</strong> 12810 - 15600 mm</li>
+                  <li>
+                    <strong>Breite (bei Reihenweite 75 cm):</strong> 3490 mm
+                  </li>
+                  <li><strong>Höhe:</strong> 4000 mm</li>
+                  <li><strong>Zulässiges Gesamtgewicht:</strong> 26000 kg</li>
+                  <li>
+                    <strong
+                      >Siebfläche 1. Siebband (bei Reihenweite 75 cm):</strong
+                    >
+                    5,9 m²
+                  </li>
+                  <li><strong>Achslast vorne:</strong> 7000 kg</li>
+                  <li><strong>Achslast hinten:</strong> 19000 kg</li>
+                  <li><strong>Kapazität (Bunker):</strong> 7000 kg</li>
+                  <li>
+                    <strong>Fahrzeugbreite (bei Reihenweite 90 cm):</strong>
+                    3870 mm
+                  </li>
+                  <li>
+                    <strong>Motorleistung bei Abgasstufe V:</strong> 340 kW
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Grimme Varitron 470 Gen3</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/ventor-4150.webp" alt="Grimme Ventor 4150" />
+            <div
+              onclick="toggleChipper('ventor')"
+              class="symbol_info"
+              data-chipper="ventor"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="ventor" class="sized">
+                <ul>
+                  <li><strong>Länge:</strong> 15000 mm</li>
+                  <li><strong>Breite in Transportstellung:</strong> 3500 mm</li>
+                  <li><strong>Höhe:</strong> 4000 mm</li>
+                  <li>
+                    <strong>Leergewicht (bei Grundausstattung):</strong> 30000
+                    kg
+                  </li>
+                  <li><strong>Arbeitsbreite (Reihenweite):</strong> 75 cm</li>
+                  <li><strong>Reihenanzahl:</strong> 4</li>
+                  <li><strong>Siebbreite (1. Siebband):</strong> 2x 1500 mm</li>
+                  <li>
+                    <strong>Trenngeräte Breite (1. Trenngerät):</strong> 2x 1250
+                    mm
+                  </li>
+                  <li><strong>Verlesetisch Breite:</strong> 1100 mm</li>
+                  <li><strong>Bunkerkapazität:</strong> 15000 kg</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Grimme Ventor 4150</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/ropa_keiler_2_bunker_n8x_5780.1920x0.webp"
+              alt="Ropa_Kartoffel_roder_Keiler_II"
+            />
+            <div
+              onclick="toggleChipper('ropa_keiler_2')"
+              class="symbol_info"
+              data-chipper="ropa_keiler_2"
+            >
+              ⓘ
+              <div id="ropa_keiler_2" class="sized">
+                <ul>
+                  <li><strong>Länge:</strong> 11.800 mm</li>
+                  <li><strong>Breite:</strong> 3.000 mm</li>
+                  <li><strong>Höhe:</strong> 3.990 mm</li>
+                  <li>
+                    <strong>Anhängung:</strong> Kugelkopfkupplung (Ø 80 mm,
+                    länderspezifisch)
+                  </li>
+                  <li><strong>Deichsellänge:</strong> 2.565 mm</li>
+                  <li>
+                    <strong>Bereifung:</strong> 2x 850/50 R30,5 (niedriger
+                    Reifenfülldruck)
+                  </li>
+                  <li>
+                    <strong>Teleskopachse:</strong> Standfestigkeit,
+                    Transportspur 3.000 mm, Arbeitsbreite 3.500 mm
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Roba Kartoffelroder Keiler II</figcaption>
+        </figure>
+        <br />
+        <div class="plh"></div>
+      </div>
+      <div class="plh"></div>
+        <div class="plh">
+          <h1>Videos zur Ballentechnik</h1>
+        </div>
+        <div class="Infobox">
+          <div class="videocontainer">
+            <video height="600px" controls src="/img/video.mp4/Kartoffelernte in Niedersachsen - Einblick in den Betriebsablauf Potato harvest in Germany 4K farmer.mp4">Your browser does not support the video tag.</video>
+            <video height="600px" controls src="/img/video.mp4/Großeinsatz Kartoffelernte Landwirtschaft in Ostdeutschland 2 SF GRIMME Varitron 470 harvest potatos.mp4">Your browser does not support the video tag.</video>
+          </div>
+        <br />
+      </div>
+    </section>
+    <!--  -->
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

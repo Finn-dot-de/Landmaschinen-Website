@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Ballentechnik</title>
+    <link rel="icon" href="../img/Geräte.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img class="pic" src="../img/Geräte.ico" alt="Geräte-Logo" />
+            Ballentechnik
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <!-- Erntemaschinen -->
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Geräte -->
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_ge"
+          src="../img/Krone_Presse.jpg"
+          alt="trecker_main_imgage"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>Ballentechnik: Effiziente Lösungen für die Ernte</h1>
+        <p>
+          Die Ballentechnik ist ein wichtiger Bestandteil der modernen
+          Landwirtschaft und hat die Art und Weise, wie Ernten gesammelt,
+          gelagert und transportiert werden, revolutioniert.
+        </p>
+        <h2>Was charakterisiert die Ballentechnik?</h2>
+        <p>
+          Die Ballentechnik umfasst verschiedene Maschinen und Geräte, die
+          speziell für die Sammlung und Verarbeitung von Erntegut wie Heu, Stroh
+          oder Silage entwickelt wurden. Diese Maschinen arbeiten zusammen, um
+          das Erntegut in kompakte, leicht transportierbare Ballen zu formen,
+          wodurch die Handhabung und Lagerung deutlich vereinfacht werden.
+          Zusätzlich können manche Ballen durch sogennante Ballenwickler mit
+          Folie umwickelt werden, um sie vor Witterungseinflüssen zu schützen
+          und die Haltbarkeit zu erhöhen.
+        </p>
+        <h2>Die Funktionsweise im Detail</h2>
+        <p>
+          Die Ballentechnik beginnt mit dem Mähen oder Sammeln des Ernteguts auf
+          dem Feld. Anschließend wird das Erntegut durch verschiedene Maschinen
+          geführt, die es zu Ballen formen. Dieser Prozess beinhaltet oft das
+          Pressen des Ernteguts, um es zu komprimieren, und das Binden oder
+          Wickeln der Ballen, um sie zusammenzuhalten. Nachdem die Ballen
+          geformt wurden, können sie auf dem Feld gelagert oder für den
+          Transport aufgeladen werden.
+        </p>
+        <h2>Die Bedeutung dieser Technologie</h2>
+        <p>
+          Die Ballentechnik hat die Art und Weise, wie Landwirte Ernten sammeln,
+          lagern und transportieren, erheblich verbessert. Durch die Umwandlung
+          von losem Erntegut in Ballen wird die Handhabung und Lagerung
+          erleichtert, was zu einer effizienteren Arbeitsweise auf dem Feld
+          führt. Außerdem ermöglicht die Ballentechnik eine bessere Nutzung des
+          verfügbaren Raums, da die Ballen leicht gestapelt und gelagert werden
+          können. Die Möglichkeit, Ballen zu wickeln, trägt zudem dazu bei, die
+          Qualität des Ernteguts zu erhalten und den Wert der Ballen zu
+          steigern.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Die Ballentechnik ist ein unverzichtbares Werkzeug für Landwirte auf
+          der ganzen Welt. Durch ihre Effizienz und Vielseitigkeit trägt sie
+          dazu bei, die Ernte zu maximieren und die Produktivität zu steigern.
+          Mit kontinuierlichen Innovationen wird die Ballentechnik auch
+          weiterhin eine wesentliche Rolle in der Landwirtschaft spielen und
+          dabei helfen, die Herausforderungen der modernen Landwirtschaft zu
+          bewältigen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Mehr Infos zu der Ballentechnik</h1>
+      </div>
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/press-wickel-compiy.avif"
+              alt="JohnDeereX9"
+              height="266px"
+            />
+            <div
+              onclick="toggleChipper('JohnDeereX9')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="JohnDeereX9" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>John Deere Presswickelcompi</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/bigbaler-plus-hero.webp"
+              height="266px"
+              alt="Claas-Trion"
+            />
+            <div
+              onclick="toggleChipper('Claas_Trion_750')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="Claas_Trion_750" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>New Holland BigBaller</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/quader_ball_fendt.jpeg" alt="Massey Ferguson" />
+            <div
+              onclick="toggleChipper('massey_fugerson_ideal_mf')"
+              class="symbol_info"
+              data-chipper="massey_fugerson_ideal_mf"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="massey_fugerson_ideal_mf" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Fendt Quader Ballenpresse</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/ball.jpeg" alt="CR_10.90" />
+            <div
+              onclick="toggleChipper('New_Holland_CR_10')"
+              class="symbol_info"
+              data-chipper="New_Holland_CR_10"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="New_Holland_CR_10" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Krone Quaderballenpresse</figcaption>
+        </figure>
+        </div>
+        <div class="plh"></div>
+        <div class="plh">
+          <h1>Videos zur Ballentechnik</h1>
+        </div>
+        <div class="Infobox">
+          <div class="videocontainer">
+            <video height="600px" controls src="/img/video.mp4/VOLLGAS beim Strohpressen  Fendt Traktoren m New Holland StrohPressen  Lohnunternehmen von Meer.mp4">Your browser does not support the video tag.</video>
+            <video height="600px" controls src="/img/video.mp4/KUHN FBP 3135 - Presswickelcombi mit Folienbindung.mp4">Your browser does not support the video tag.</video>
+          </div>
+        <br />
+      </div>
+      <br />
+      <br />
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

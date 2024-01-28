@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: var(--general-font-size);
+    color: var(--text-color);
+}
+
+/*------------------------------------------------*/
+.pic {
+    width: var(--logo-width-size);
+    margin-right: var(--logo-location);
+    margin-left: var(--logo-location);
+    height: auto;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--logo-font-size);
+    font-variant: small-caps;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    margin-top: var(--logo-location-top);
+}
+
+/*------------------------------------------------*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+/*------------------------------------------------*/
+
+nav {
+    height: var(--navbar-height);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: var(--nav-location);
+}
+
+header {
+    background-color: var(--background-color);
+    height: 10vh;
+}
+
+/*------------------------------------------------*/
+
+nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    height: 100%;
+    width: var(--nav-li-width);
+    text-align: center;
+    position: relative;
+    margin-top: var(--nav-li-location-top);
+}
+
+nav li:hover {
+    background: var(--accent-color);
+}
+
+nav ul a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*------------------------------------------------*/
+
+.dropdown {
+    height: min-content;
+    width: var(--dropdown-width);
+    background: var(--background-color);
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: var(--navbar-height);
+}
+
+.dropdown li {
+    height: var(--height-dropdown-li);
+    width: 100%;
+    font-size: var(--font-and-padding-size-dropdown);
+}
+
+.dropdown li a {
+    justify-content: flex-start;
+    padding-left: var(--font-and-padding-size-dropdown);
+    width: calc(100% - 20px);
+    font-size: var(--dropdown-li-font-size);
+}
+
+/*------------------------------------------------*/
+
+nav li:hover .dropdown {
+    display: flex;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+/*------------------------------------------------*/
+
+.expandable_li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle_button {
+    width: 30px;
+    height: 23px;
+
+    position: absolute;
+    top: var(--hamburger-location);
+    right: var(--hamburger-location);
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*------------------------------------------------*/
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background: var(--text-color);
+    border-radius: var(--border-radius);
+}
+
+@media(max-width: 1000px) {
+    .toggle_button {
+        display: flex;
+    }
+
+    nav ul {
+        height: min-content;
+        width: 100%;
+        background-color: var(--background-color);
+        margin-top: 40px;
+        display: none;
+        position: absolute;
+        top: var(--navbar-height);
+    }
+
+    nav li {
+        height: min-content;
+        width: 100%;
+    }
+
+    nav ul a {
+        padding: 30px 0;
+        padding-left: 40px;
+    }
+
+    .expandable_li {
+        display: block;
+    }
+
+    .expandable_li label {
+        padding: var(--padding-size-expandable-li) 0;
+        cursor: pointer;
+        display: block;
+    }
+
+    .expandable_li:hover .dropdown {
+        display: none;
+    }
+
+    .expandable_li input[type="checkbox"]:checked~.dropdown {
+        display: block;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+    }
+
+    .dropdown li {
+        padding: 0;
+        display: block;
+        position: static;
+        background: var(--darker-background-color);
+
+    }
+
+    .dropdown li a {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #toggle_button:checked~ul {
+        display: block;
+    }
+}
+
+/*------------------------------------------------*/
+
+section {
+    margin-left: 10px;
+}
+
+footer {
+    height: 25%;
+    background-color: var(--background-color);
+}
+
+/*------------------------------------------------*/
+
+nav li.expandable_li {
+    margin-right: var(--expandable-li-nav-location-right);
+}
+
+/*------------------------------------------------*/
+
+#label, .label_menu{
+    font-size: var(--label-font-size);
+    display: block;
+}

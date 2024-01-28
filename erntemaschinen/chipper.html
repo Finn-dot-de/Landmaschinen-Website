@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Feldhäcksler</title>
+    <link rel="icon" href="../img/main_logo.ico" />
+    <style>
+      .fig img {
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img
+              class="pic"
+              src="../img/main_logo.ico"
+              alt="Erntemaschinen-Logo"
+            />
+            Feldhäcksler
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--  -->
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_mäh"
+          src="../img/Wallpaper_KRONE_QF_7.jpg"
+          alt="chipper_main_imgage_Krone"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>
+          Feldhäcksler: Eine Technologische Revolution in der Landwirtschaft
+        </h1>
+        <p>
+          Feldhäcksler gelten als eine der wegweisenden Innovationen in der
+          Landwirtschaft. Ihre Einführung hat die Art und Weise, wie wir Futter
+          ernten, nachhaltig verändert und die Effizienz sowie Produktivität auf
+          Feldern weltweit signifikant gesteigert.
+        </p>
+        <h2>Was macht einen Feldhäcksler aus?</h2>
+        <p>
+          Ein Feldhäcksler ist eine hochspezialisierte Maschine, die gezielt für
+          die Ernte von Futterpflanzen wie Mais, Gras und Luzerne konzipiert
+          wurde. Der Name "Feldhäcksler" leitet sich von den essenziellen
+          Prozessen ab, die die Maschine durchführt: Schneiden (Abschneiden der
+          Pflanzen), Häckseln (Zerkleinern der Pflanzen in kleine Stücke) und
+          Sammeln (Aufnehmen und Speichern des gehäckselten Materials).
+        </p>
+        <h2>Wie arbeitet ein Feldhäcksler?</h2>
+        <p>
+          Der Feldhäcksler vollführt seine Aufgaben in mehreren Schritten.
+          Zunächst schneidet er die Pflanzen mit scharfen Werkzeugen ab. Die
+          abgeschnittenen Pflanzen gelangen dann in die Maschine, wo sie
+          effektiv gehäckselt werden. Dieser Vorgang zerlegt die Pflanzen in
+          kleine Stücke, die leichter handhabbar und transportierbar sind.
+          Schließlich erfolgt die Sammlung des gehäckselten Materials in einem
+          Behälter, während überschüssiges Material aus der Rückseite der
+          Maschine ausgestoßen wird.
+        </p>
+        <h2>Die Bedeutung von Feldhäckslern</h2>
+        <p>
+          Feldhäcksler haben die Landwirtschaft revolutioniert, indem sie die
+          Zeit und den Arbeitsaufwand für die Ernte erheblich reduziert haben.
+          Vor der Einführung des Feldhäckslers war die Ernte eine zeitaufwändige
+          und arbeitsintensive Tätigkeit, die oft eine Vielzahl von
+          Arbeitskräften erforderte. Mit dem Einsatz von Feldhäckslern können
+          Landwirte jetzt große Flächen schnell und effizient bewirtschaften,
+          was zu höheren Erträgen und einer insgesamt effizienteren
+          Landwirtschaft führt.
+        </p>
+        <h2>Fazit: Feldhäcksler als Schlüsselakteure in der Landwirtschaft</h2>
+        <p>
+          Feldhäcksler sind unverzichtbare Werkzeuge in der modernen
+          Landwirtschaft. Ihre bahnbrechende Technologie hat nicht nur die
+          Ernteprozesse optimiert, sondern trägt auch wesentlich zur Ernährung
+          der wachsenden Weltbevölkerung bei. Durch kontinuierliche
+          Verbesserungen und innovative Entwicklungen werden Feldhäcksler auch
+          in Zukunft eine zentrale Rolle in der Landwirtschaft spielen und dazu
+          beitragen, die Herausforderungen der Nahrungsproduktion zu bewältigen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Mehr Infos zu den verschiedenen Feldhäckslern</h1>
+      </div>
+      <br />
+      <!-- Picture with Info -->
+      <div class="Infobox" id="imgagebox">
+        <figure class="fig">
+          <div class="symbol_info_box">
+            <img src="../img/Claas_Jaguar.jpg" alt="Claas_Jaguar" />
+            <div
+              onclick="toggleChipper('claas_chipper')"
+              class="symbol_info"
+              data-chipper="claas_chipper"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="claas_chipper" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 680 kW</li>
+                  <li><strong>Serien:</strong> Jaguar</li>
+                  <li><strong>Bereifung hinten:</strong> 540/65 R30</li>
+                  <li><strong>Bereifung vorne:</strong> 710/75 R34</li>
+                  <li><strong>Pick-up Breite min.:</strong> 3 m</li>
+                  <li><strong>Pick-up Breite max.:</strong> 3.8 m</li>
+                  <li><strong>Eigengewicht:</strong> 14.15 t</li>
+                  <li><strong>Lenkung:</strong> HH</li>
+                  <li><strong>Bremsen:</strong> L</li>
+                  <li><strong>Fahrgeschwindigkeit:</strong> 40 km/h</li>
+                  <li><strong>Motorhersteller:</strong> MAN</li>
+                  <li><strong>Motortyp:</strong> D 2862</li>
+                  <li><strong>Hubraum:</strong> 24.24 l</li>
+                  <li><strong>Zylinderanzahl:</strong> 12</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Class Jaguar 990</figcaption>
+        </figure>
+        <br />
+        <figure class="fig">
+          <div class="symbol_info_box">
+            <img
+              src="../img/John_deere_chipper.avif"
+              alt="John_deere_chipper"
+            />
+            <div
+              onclick="toggleChipper('john_deere_chipper')"
+              class="symbol_info"
+              data-chipper="john_deere_chipper"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="john_deere_chipper" class="sized">
+                <ul>
+                  <li>
+                    <strong>Max. Leistung:</strong> 342 kW/465 PS (13,5 l
+                    PowerTech™)
+                  </li>
+                  <li>
+                    <strong
+                      >Messertrommelgehäuse – Breite und Durchmesser:</strong
+                    >
+                    680 mm/670 mm
+                  </li>
+                  <li>
+                    <strong>Schnittlänge mit 40 Messern:</strong> 7-26 mm in
+                    Schritten von 1 mm
+                  </li>
+                  <li>
+                    <strong>Schnittlänge mit 64 Messern:</strong> 3-15 mm in
+                    Schritten von 1 mm
+                  </li>
+                  <li><strong>Körnerprozessor:</strong> Premium KP™</li>
+                  <li><strong>Nennleistung:</strong> 20 l</li>
+                  <li><strong>Motor Hubraum:</strong> 9 l</li>
+                  <li>
+                    <strong>Modell:</strong> Europa: 6090HZ014, Nordamerika:
+                    6090HZ015
+                  </li>
+                  <li><strong>Zylinder:</strong> Sechs in Reihe</li>
+                  <li>
+                    <strong>Kraftstoffsystem:</strong> Common Rail und vier
+                    Ventile
+                  </li>
+                  <li>
+                    <strong>Füllmenge des Kraftstofftanks:</strong> 1100 l
+                  </li>
+                  <li>
+                    <strong
+                      >Kapazität des DEF-Tanks (für die Abgasstufen IV und
+                      V):</strong
+                    >
+                    43 l
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>John Deere 8200</figcaption>
+        </figure>
+        <br />
+        <figure class="fig">
+          <div class="symbol_info_box">
+            <img src="../img/953655_XL.jpg" alt="Krone-Feldhäcksler" />
+            <div
+              onclick="toggleChipper('crown_chipper')"
+              class="symbol_info"
+              data-chipper="crown_chipper"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="crown_chipper" class="sized">
+                <ul>
+                  <li>Motorleistung: 850 kW</li>
+                  <li>Serien BiG X: 680-1180</li>
+                  <li>Bereifung hinten: 500/85 R 30</li>
+                  <li>Bereifung vorne: 680/80 R 38</li>
+                  <li>Pick-up Breite min.: 3 m</li>
+                  <li>Pick-up Breite max.: 3 m</li>
+                  <li>Eigengewicht: 17.1 t</li>
+                  <li>Fahrgeschwindigkeit: 40 km/h</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Krone Big X 1180</figcaption>
+        </figure>
+        <br />
+        <figure class="fig">
+          <div class="symbol_info_box">
+            <img src="../img/Fendt_chipper.jpg" alt="Fendt_chipper" />
+            <div
+              onclick="toggleChipper('fendt_chipper')"
+              class="symbol_info"
+              data-chipper="fendt_chipper"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="fendt_chipper" class="sized">
+                <ul>
+                  <li>
+                    <strong>Max. Leistung:</strong> 623 kW / 847 PS (Liebherr
+                    D976, Abgasstufe 5)
+                  </li>
+                  <li><strong>Motoren:</strong> R6-Zylinder</li>
+                  <li><strong>Hubraum:</strong> 18,0 Liter</li>
+                  <li>
+                    <strong>Tankinhalt Konfiguration 1 - Diesel/AdBlue:</strong>
+                    1.430/190 Liter
+                  </li>
+                  <li>
+                    <strong
+                      >Tankinhalt Konfiguration 2 -
+                      Diesel/AdBlue/Additiv:</strong
+                    >
+                    1.215/190/215 Liter
+                  </li>
+                  <li>
+                    <strong>Häckseltrommel - Häcksellänge 20 Messer:</strong>
+                    5,2 - 29,0 mm
+                  </li>
+                  <li>
+                    <strong>Häckseltrommel - Häcksellänge 28 Messer:</strong>
+                    3,7 - 20,7 mm
+                  </li>
+                  <li><strong>Gutfluss:</strong> Fendt CropFlow 2.0</li>
+                  <li>
+                    <strong>Allradantrieb:</strong> Ja, mit erhöhtem Drehmoment
+                  </li>
+                  <li>
+                    <strong>Hinterachsfederung:</strong> Ja, höhenverstellbar
+                    für mehr Komfort und Stabilität
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Fendt Katana 850</figcaption>
+        </figure>
+        <div class="plh"></div>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Videos zur Ballentechnik</h1>
+      </div>
+      <div class="Infobox">
+        <div class="videocontainer">
+          <video
+            id="myVideo"
+            height="600px"
+            controls
+            src="/img/video.mp4/Der neue CLAAS JAGUAR 990.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <video
+            id="myVideo"
+            height="600px"
+            controls
+            src="/img/video.mp4/KRONE BiG X 1180 – Worlds most powerful forage harvester.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <br />
+      </div>
+    </section>
+    <!--  -->
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

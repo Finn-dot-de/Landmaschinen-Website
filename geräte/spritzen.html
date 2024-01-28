@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Spritzen</title>
+    <link rel="icon" href="../img/Geräte.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img class="pic" src="../img/Geräte.ico" alt="Geräte-Logo" />
+            Geräte
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <!-- Erntemaschinen -->
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Geräte -->
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_ge"
+          src="../img/john-deere-self-propelled-sprayer-wheat.avif"
+          alt="trecker_main_imgage"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>
+          Pflanzenschutzspritzen: Effiziente Lösungen für die Landwirtschaft
+        </h1>
+        <p>
+          Pflanzenschutzspritzen sind ein unverzichtbares Werkzeug in der
+          modernen Landwirtschaft und haben die Art und Weise, wie Pflanzen vor
+          Schädlingen, Krankheiten und Unkräutern geschützt werden,
+          revolutioniert.
+        </p>
+        <h2>Was charakterisiert Pflanzenschutzspritzen?</h2>
+        <p>
+          Pflanzenschutzspritzen umfassen eine Vielzahl von Geräten und
+          Systemen, die entwickelt wurden, um Pflanzenschutzmittel wie
+          Herbizide, Fungizide und Insektizide gleichmäßig auf Feldern
+          auszubringen. Diese Spritzen können entweder auf Traktoren montiert
+          sein oder als selbstfahrende Einheiten betrieben werden. Moderne
+          Spritztechnologien bieten Funktionen wie präzise Dosierung,
+          automatische Abschaltungen in empfindlichen Bereichen und
+          GPS-gesteuerte Spurführung, um die Effizienz und Genauigkeit der
+          Anwendung zu maximieren.
+        </p>
+        <h2>Die Funktionsweise im Detail</h2>
+        <p>
+          Die Anwendung von Pflanzenschutzmitteln mit Spritzgeräten beginnt mit
+          der Vorbereitung der Lösung und der Einstellung der Spritzparameter
+          entsprechend den Anforderungen der Anwendung. Während der Feldarbeit
+          bewegt sich die Spritze entlang vordefinierter Routen über das Feld,
+          wobei die Pflanzenschutzmittel über Düsen gleichmäßig verteilt werden.
+          Moderne Spritzgeräte können mit Sensoren ausgestattet sein, die den
+          Pflanzenbestand und die Bodenbedingungen überwachen und die
+          Ausbringung entsprechend anpassen, um Überdosierungen zu vermeiden und
+          die Umweltbelastung zu minimieren.
+        </p>
+        <h2>Die Bedeutung dieser Technologie</h2>
+        <p>
+          Pflanzenschutzspritzen spielen eine entscheidende Rolle bei der
+          Sicherstellung gesunder Pflanzen und hoher Erträge, indem sie effektiv
+          vor Schädlingen, Krankheiten und Unkräutern schützen. Durch die
+          präzise Anwendung von Pflanzenschutzmitteln können Landwirte nicht nur
+          den Einsatz von Chemikalien reduzieren, sondern auch die Effizienz der
+          Bekämpfungsmaßnahmen verbessern und so die Rentabilität ihrer Betriebe
+          steigern. Darüber hinaus ermöglichen moderne Spritztechnologien eine
+          gezielte und umweltschonende Anwendung, die dazu beiträgt, Boden- und
+          Gewässerbelastungen zu minimieren.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Pflanzenschutzspritzen sind ein unverzichtbares Instrument in der
+          modernen Landwirtschaft, das dazu beiträgt, die Herausforderungen im
+          Bereich des Pflanzenschutzes zu bewältigen. Mit ihrer Hilfe können
+          Landwirte gesunde und ertragreiche Ernten erzielen, während sie
+          gleichzeitig Umweltbelastungen reduzieren und die Nachhaltigkeit ihrer
+          Betriebe fördern. Durch kontinuierliche Innovationen und die
+          Integration fortschrittlicher Technologien werden
+          Pflanzenschutzspritzen auch weiterhin eine zentrale Rolle spielen, um
+          den Anforderungen einer wachsenden Weltbevölkerung gerecht zu werden
+          und eine sichere und nachhaltige Nahrungsmittelproduktion zu
+          gewährleisten.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Mehr Infos zu der Ballentechnik</h1>
+      </div>
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/fendt-news-2-low_gu2tanzzge2fu.jpg"
+              alt="JohnDeereX9"
+              height="266px"
+            />
+            <div
+              onclick="toggleChipper('JohnDeereX9')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="JohnDeereX9" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Fendt Feldspritze 89 e</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/spritz.avif"
+              height="266px"
+              alt="Claas-Trion"
+            />
+            <div
+              onclick="toggleChipper('Claas_Trion_750')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="Claas_Trion_750" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>John Deere Spritze 990</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/Spritezn.jpeg" alt="Massey Ferguson" />
+            <div
+              onclick="toggleChipper('massey_fugerson_ideal_mf')"
+              class="symbol_info"
+              data-chipper="massey_fugerson_ideal_mf"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="massey_fugerson_ideal_mf" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Kuhn Selbstfahrer 4400</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/spritze.jpg" alt="CR_10.90" />
+            <div
+              onclick="toggleChipper('New_Holland_CR_10')"
+              class="symbol_info"
+              data-chipper="New_Holland_CR_10"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="New_Holland_CR_10" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Amazon Feldspritze Modell A5</figcaption>
+        </figure>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Videos zur Ballentechnik</h1>
+      </div>
+      <div class="Infobox">
+        <div class="videocontainer">
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/Rapsblüte - Pflanzenschutzeinsatz vs Pilzkrankheiten - Horsch Feldspritze Landwirtschaft Wärmebild.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/KUHN New AXIS series 2 - Fertiliser Spreaders (In action).mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <br />
+      </div>
+      <br />
+      <br />
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

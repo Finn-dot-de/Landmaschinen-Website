@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Großtraktoren</title>
+    <link rel="icon" href="../img/Traktor.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img class="pic" src="../img/Traktor.ico" alt="Traktor-Logo" />
+            Großtraktoren
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="kompakttraktoren.html">Kompakttraktoren</a></li>
+              <li><a href="medium.html">Mittelgroße Traktoren</a></li>
+              <li><a href="bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img style="width: 130vh; height: auto;"
+          id="main_banner_tr"
+          src="../img/t7-heavy-duty-stage-v-hero.webp"
+          alt="trecker_main_imgage"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>Großtraktoren: Vorreiter der Effizienz auf dem Acker</h1>
+        <p>
+          Großtraktoren stellen eine wegweisende Innovation in der
+          Landwirtschaft dar. Ihr Einfluss auf die Bearbeitung von Feldern hat
+          die Effizienz und Produktivität in der Landwirtschaft weltweit
+          revolutioniert.
+        </p>
+        <h2>Was zeichnet einen Großtraktor aus?</h2>
+        <p>
+          Ein Großtraktor ist eine spezialisierte landwirtschaftliche Maschine,
+          die entwickelt wurde, um eine Vielzahl von Aufgaben auf dem Feld zu
+          bewältigen. Der Begriff "Großtraktor" umfasst leistungsstarke
+          Fahrzeuge, die nicht nur für den Antrieb von landwirtschaftlichen
+          Geräten, sondern auch für verschiedene Bearbeitungsprozesse eingesetzt
+          werden. Diese umfassen unter anderem Pflügen, Saatgutverteilung,
+          Düngung und andere landwirtschaftliche Tätigkeiten.
+        </p>
+        <h2>Die Funktionsweise im Detail</h2>
+        <p>
+          Ein Großtraktor arbeitet in verschiedenen Phasen, angepasst an die
+          spezifischen Anforderungen der landwirtschaftlichen Aufgaben. Mit
+          leistungsstarken Motoren und einer Vielzahl von Anbaugeräten
+          ausgestattet, kann er das Feld pflügen, säen und düngen. Durch
+          innovative Technologien können moderne Großtraktoren GPS-gesteuert
+          navigieren und so eine präzise und effiziente Bearbeitung ermöglichen.
+        </p>
+        <h2>Die Bedeutung dieser Technologie</h2>
+        <p>
+          Großtraktoren haben die Landwirtschaft durch die erhebliche
+          Reduzierung von Zeit und Arbeitsaufwand bei verschiedenen
+          landwirtschaftlichen Tätigkeiten revolutioniert. Vor der Einführung
+          von Großtraktoren erforderten diese Aufgaben oft mehrere Arbeitskräfte
+          und einen beträchtlichen Zeitrahmen. Mit Großtraktoren können
+          Landwirte nun große Flächen schnell und effizient bewirtschaften, was
+          zu höheren Erträgen und einer insgesamt effizienteren Landwirtschaft
+          führt.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Großtraktoren sind unverzichtbare Werkzeuge in der modernen
+          Landwirtschaft. Ihre Innovationskraft in der Bearbeitung von Feldern
+          trägt maßgeblich dazu bei, die wachsende Weltbevölkerung zu ernähren.
+          Durch kontinuierliche Entwicklungen werden Großtraktoren auch in
+          Zukunft eine zentrale Rolle in der Landwirtschaft spielen und dazu
+          beitragen, die Herausforderungen der Nahrungsmittelproduktion zu
+          bewältigen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Mehr Infos zu den verschiedenen Großtraktoren</h1>
+      </div>
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/Claas_Xerion_12690.jpg"
+              alt="JohnDeereX9"
+              height="266px"
+            />
+            <div
+              onclick="toggleChipper('Claas_Xerion_12690')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="Claas_Xerion_12690" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 478 kW / 650</li>
+                  <li><strong>Serien:</strong> Xerion</li>
+                  <li><strong>Kettenbreite</strong> 760mm</li>
+                  <li><strong>Fahrgeschwindigkeit:</strong> 50 km/h</li>
+                  <li><strong>Getriebeart:</strong> Stufenlos</li>
+                  <li><strong>Eigengewicht:</strong> 13.4 t</li>
+                  <li><strong>Steuergerät:</strong> 4 ew/dw</li>
+                  <li><strong>Lenkung:</strong> Hydraulisch</li>
+                  <li><strong>Motorhersteller:</strong> Mercedes-Benz</li>
+                  <li><strong>Motor Type:</strong> OM471 LA</li>
+                  <li><strong>Hubraum:</strong> 12.8 l</li>
+                  <li><strong>Drehzahl bei max. Drehmoment:</strong> 1700 rpm</li>
+                  <li><strong>Drehmoment bei Drehzahl von-bis:</strong> 2460 Nm</li>
+                  <li><strong>Zylinderanzahl:</strong> 6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Claas Xerion 12.650</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/bigbaler-plus-hero.webp"
+              height="266px"
+              alt="Claas-Trion"
+            />
+            <div
+              onclick="toggleChipper('Claas_Trion_750')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="Claas_Trion_750" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 320 kW</li>
+                  <li><strong>Serien:</strong> T8</li>
+                  <li><strong>Bereifung hinten:</strong> 800/70R38 R1W Dual</li>
+                  <li><strong>Bereifung vorne:</strong> 480/70R34 R1W Dual</li>
+                  <li><strong>Transportlänge:</strong> 6.284 m</li>
+                  <li><strong>Transportbreite:</strong> 3.05 m</li>
+                  <li><strong>Transporthöhe:</strong> 3.38 m</li>
+                  <li><strong>Fahrgeschwindigkeit:</strong> 40 km/h</li>
+                  <li><strong>Eigengewicht:</strong> 15,8 t</li>
+                  <li><strong>Motorhersteller:</strong> FPT</li>
+                  <li><strong>Motor Type:</strong> Nicht verfügbar</li>
+                  <li><strong>Drehzahl bei max. Drehmoment:</strong> 1400 rpm</li>
+                  <li><strong>Drehmoment bei Drehzahl von-bis:</strong> 1850 Nm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>New Holland T8</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/2022_Quadrac.jpg" alt="Massey Ferguson" />
+            <div
+              onclick="toggleChipper('massey_fugerson_ideal_mf')"
+              class="symbol_info"
+              data-chipper="massey_fugerson_ideal_mf"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="massey_fugerson_ideal_mf" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 508 kW / 696 PS</li>
+                  <li><strong>Serien:</strong> Quadtrac</li>
+                  <li><strong>Kettenbreite:</strong> 762 mm</li>
+                  <li><strong>Fahrgeschwindigkeit:</strong> 40 km/h</li>
+                  <li><strong>Anzahl Gänge:</strong> 16x2</li>
+                  <li><strong>Eigengewicht:</strong> 23.868 t</li>
+                  <li><strong>Steuergerät:</strong> 4 ew/dw</li>
+                  <li><strong>Motorhersteller:</strong> Case</li>
+                  <li><strong>Motor Type:</strong> AFConnect</li>
+                  <li><strong>Hubraum:</strong> 12.9 l</li>
+                  <li><strong>Drehmoment bei Drehzahl von-bis:</strong> 2941/1400 Nm</li>
+                  <li><strong>Zylinderanzahl:</strong> 6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Case Quadtrac 650</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/vario-1100.png" alt="fendt_vario_1100" />
+            <div
+              onclick="toggleChipper('vario_1100')"
+              class="symbol_info"
+              data-chipper="vario_1100"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="vario_1100" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 495 kW</li>
+                  <li><strong>Serien:</strong> 1100 Vario</li>
+                  <li><strong>Kettenbreite:</strong> 224 mm</li>
+                  <li><strong>Fahrgeschwindigkeit:</strong> 40 km/h</li>
+                  <li><strong>Getriebeart:</strong> Stufenlos</li>
+                  <li><strong>Eigengewicht:</strong> 19.356 t</li>
+                  <li><strong>Hubraum:</strong> 16.2 l</li>
+                  <li><strong>Drehzahl bei max. Drehmoment:</strong> 1730 rpm</li>
+                  <li><strong>Drehmoment bei Drehzahl von-bis:</strong> 3100/1450 Nm</li>
+                  <li><strong>Zylinderanzahl:</strong> 6</li>
+                  <li><strong>Zylinder Bohrung x Hub:</strong> 142x170 mm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Fendt 1167 Vario MT</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/agricultural-land-challenger-600nw-724935163.webp"
+              alt="Lexion_8900"
+              height="250px"
+            />
+            <div
+              onclick="toggleChipper('Challenger')"
+              class="symbol_info"
+              data-chipper="Challenger"
+            >
+              ⓘ
+              <div id="Challenger" class="sized">
+                <ul>
+                  <li><strong>Motorleistung:</strong> 425 kW</li>
+                  <li><strong>Serien:</strong> MT800C</li>
+                  <li><strong>Kettenbreite:</strong> 762 mm</li>
+                  <li><strong>Laufwerkslänge:</strong> 6754 mm</li>
+                  <li><strong>Transportlänge:</strong> 6.75 m</li>
+                  <li><strong>Transportbreite:</strong> 3.42 m</li>
+                  <li><strong>Transporthöhe:</strong> 3.66 m</li>
+                  <li><strong>Fahrgeschwindigkeit:</strong> 40 km/h</li>
+                  <li><strong>Anzahl Gänge:</strong> 16/4</li>
+                  <li><strong>Eigengewicht:</strong> 21 t</li>
+                  <li><strong>Motorhersteller:</strong> Caterpillar</li>
+                  <li><strong>Motor Type:</strong> C18 Acert</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Challenger MT 875 C</figcaption>
+        </figure>
+        <br />
+      </div>
+      <br />
+      <br />
+      <div class="plh"></div>
+        <div class="plh">
+          <h1>Videos zu Großtraktoren</h1>
+        </div>
+        <div class="Infobox">
+          <div class="videocontainer">
+            <video height="600px" controls src="/img/video.mp4/Bodenbearbeitung 2022 mit Case Ih Quadtrac 620 Knicklenker für die Mais Aussaat.mp4">Your browser does not support the video tag.</video>
+            <video height="600px" controls src="/img/video.mp4/Kalk Einarbeiten mit einer Challenger MT 875 E Raupe  Grubbern  Bodenbearbeitung  Köckerling.mp4">Your browser does not support the video tag.</video>
+          </div>
+        <br />
+      </div>
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

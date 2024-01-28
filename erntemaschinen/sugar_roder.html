@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Zuckerrübenroder</title>
+    <link rel="icon" href="../img/main_logo.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img
+              class="pic"
+              src="../img/main_logo.ico"
+              alt="Erntemaschinen-Logo"
+            />
+            Zuckerrübenroder
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--  -->
+    <section class="main">
+      <div id="main_banner">
+        <img
+          style="height: 680px; width: 1300px"
+          id="main_banner_mäh"
+          src="../img/tiger_6_xl_titelbild_d8x2526_gross.1440x810.webp"
+          alt="Vartion-270-platinum-terra-trac"
+        />
+      </div>
+      <div class="plh"></div>
+      <div class="Infobox">
+        <h1>
+          Rübenerntemaschinen: Ein technologischer Durchbruch in der
+          Landwirtschaft
+        </h1>
+        <p>
+          Rübenerntemaschinen sind eine der bedeutendsten Neuerungen in der
+          Landwirtschaft. Sie haben die Methode, wie wir Rüben ernten,
+          umgewandelt und die Leistungsfähigkeit und Produktionsrate auf den
+          Feldern weltweit erhöht.
+        </p>
+        <h2>Was ist eine Rübenerntemaschine?</h2>
+        <p>
+          Eine Rübenerntemaschine ist ein Gerät, das speziell für die Ernte von
+          Rüben konzipiert wurde. Der Begriff “Rübenerntemaschine” stammt von
+          den Vorgängen, die das Gerät durchführt: Abschneiden (Zerschneiden der
+          Rüben), Aufnehmen (Einsammeln und Lagern der geschnittenen Rüben).
+        </p>
+        <h2>Wie arbeitet eine Rübenerntemaschine?</h2>
+        <p>
+          Eine Rübenerntemaschine funktioniert in mehreren Phasen. Zunächst
+          schneidet sie die Rüben mit einem speziellen Mechanismus ab. Diese
+          abgeschnittenen Rübenstiele werden dann in das Gerät geleitet, wo sie
+          aufgenommen werden. Dieser Vorgang erleichtert die Handhabung und den
+          Transport der Rüben. Schließlich wird das Material in einem Behälter
+          gespeichert, während das übrige Material aus dem hinteren Teil des
+          Geräts ausgeworfen wird.
+        </p>
+        <h2>Die Bedeutung von Rübenerntemaschinen</h2>
+        <p>
+          Rübenerntemaschinen haben die Landwirtschaft umgestaltet, indem sie
+          die Dauer und den Arbeitsaufwand für die Ernte erheblich verringert
+          haben. Vor der Erfindung der Rübenerntemaschine war die Ernte eine
+          zeitaufwendige und arbeitsintensive Aufgabe, die oft viele Arbeiter
+          benötigte. Mit der Rübenerntemaschine können Landwirte jetzt große
+          Flächen zügig und effizient ernten, was zu höheren Erträgen und einer
+          effizienteren Landwirtschaft führt.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Rübenerntemaschinen sind ein unverzichtbares Instrument in der
+          modernen Landwirtschaft. Sie haben die Methode, wie wir Rüben ernten,
+          umgewandelt und tragen dazu bei, die wachsende Weltbevölkerung zu
+          versorgen. Durch ständige Verbesserungen und Innovationen werden
+          Rübenerntemaschinen auch in der Zukunft eine wichtige Rolle in der
+          Landwirtschaft spielen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1 style="font-size: 30pt">Mehr Infos zu den Zuckerrübenroder</h1>
+      </div>
+
+      <br />
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/ropa_tiger6s_xl_zuckerrueben_3_n8x_9065.1440x810.webp"
+              alt="Ropa Rübenroder Tiger 6"
+            />
+            <div
+              onclick="toggleChipper('ropa_tiger6s')"
+              class="symbol_info"
+              data-chipper="ropa_tiger6s"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="ropa_tiger6s" class="sized">
+                <ul>
+                  <li>
+                    <strong>Motor:</strong> Volvo Penta TWD1683VE, 796 PS / 585
+                    kW, 3650 Nm Drehmoment
+                  </li>
+                  <li>
+                    <strong>Effizienz:</strong> Fortschrittliche
+                    Rechnerarchitektur
+                  </li>
+                  <li>
+                    <strong>Digitalisierung:</strong> Symbolisiert durch das
+                    Erscheinungsbild
+                  </li>
+                  <li>
+                    <strong>R-Connect:</strong> Onlineportal für Vernetzung
+                  </li>
+                  <li>
+                    <strong>Fahrerplatz:</strong> Zwei 12,1 Zoll Bedienterminals
+                    mit hoher Pixeldichte
+                  </li>
+                  <li>
+                    <strong>Bedienung:</strong> Intuitiv mit interaktiven
+                    Schaltflächen
+                  </li>
+                  <li>
+                    <strong>Kameras:</strong> Serienmäßige Digitalkameras für
+                    bessere Bildqualität
+                  </li>
+                  <li>
+                    <strong>Bunkervolumen:</strong> Groß für hohe
+                    Tagesleistungen
+                  </li>
+                  <li><strong>Kraftstoffverbrauch:</strong> Gering</li>
+                  <li><strong>Verschleiß:</strong> Geringer Verschleiß</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Ropa Rübenroder Tiger 6</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/rexor_6300_9.webp" alt="Grimme Rexor 6300" />
+            <div
+              onclick="toggleChipper('rexor_6300')"
+              class="symbol_info"
+              data-chipper="rexor_6300"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="rexor_6300" class="sized">
+                <ul>
+                  <li><strong>Arbeitsbreite:</strong> 45, 48 oder 50 cm</li>
+                  <li><strong>Reihenanzahl:</strong> 6</li>
+                  <li><strong>Rodeaggregat:</strong> Radrodeschare (X)</li>
+                  <li>
+                    <strong>Reinigungseinheit:</strong> 1. Siebstern 1700 mm, 2.
+                    Und 3. Siebstern 1500 mm, Reinigungsfläche 11 m²
+                  </li>
+                  <li><strong>Ringelevator:</strong> Breite 900 mm</li>
+                  <li>
+                    <strong>Bunker:</strong> Volumen 45 m³, Breite Entladeband
+                    1800 mm
+                  </li>
+                  <li>
+                    <strong>Überladeelevator:</strong> Übergabehöhe 4000 mm
+                  </li>
+                  <li>
+                    <strong>Bereifung:</strong> Vorne Michelin IF 800/70 R38,
+                    Mitte Michelin 1000/55 R32, Hinten Michelin 900/60 R32
+                  </li>
+                  <li>
+                    <strong>Lenkeinschlag:</strong> Vorne +/- 10°, Mitte +/-
+                    20°, Hinten +/- 32°, Knickgelenk +/- 35°
+                  </li>
+                  <li>
+                    <strong>Fahrwerk und Motor:</strong> Motorleistung 480 kW /
+                    653 PS, Kraftstofftank 1300 L, AdBlue Tank 95 L
+                  </li>
+                  <li>
+                    <strong>Weitere Motorinfo:</strong> Mercedes-Benz (MTU)
+                    Motor OM 473 LA, Stufe V, SCR-Abgastechnik (AdBlue)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Grimme Rexor 6300</figcaption>
+        </figure>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Videos zur Ballentechnik</h1>
+      </div>
+      <div class="Infobox">
+        <div class="videocontainer">
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/Zuckerrübenernte 2023 XXL Ersteinsatz 5x Ropa Tiger 6s - Maschinenring Göttingen.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/Beet Harvest XXL  4x GRIMME MAXTRON 620  self-propelled Beet Harvesters.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <br />
+      </div>
+    </section>
+    <!--  -->
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

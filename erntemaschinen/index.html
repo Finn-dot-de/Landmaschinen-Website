@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Erntemaschinen Startseite</title>
+    <link rel="icon" href="../img/main_logo.ico" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img
+              class="pic"
+              src="../img/main_logo.ico"
+              alt="Erntemaschinen-Logo"
+            />
+            Erntemaschinen
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../traktoren/kompakttraktoren.html">Kompakttraktoren</a></li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_mäh"
+          src="../img/Lexion_8700.jpg"
+          alt="Mähdrescher_main_imgag_lexion"
+        />
+      </div>
+      <div class="plh"></div>
+      <div class="Infobox">
+        <h1>Was sind Erntemaschinen?</h1>
+        <p>
+          Erntemaschinen sind spezialisierte landwirtschaftliche Geräte, die
+          dazu entwickelt wurden, Ernteprozesse effizienter und zeitsparender zu
+          gestalten. Sie spielen eine entscheidende Rolle in der modernen
+          Landwirtschaft, indem sie die Ernte von Feldfrüchten automatisieren
+          und den Arbeitsaufwand für Landwirte reduzieren. Hier sind einige
+          Aspekte, die die Bedeutung und Vielseitigkeit von Erntemaschinen
+          verdeutlichen.
+        </p>
+        <h2>Die Funktionen von Erntemaschinen</h2>
+        <p>
+          Erntemaschinen werden für verschiedene landwirtschaftliche Aufgaben
+          eingesetzt, darunter das Mähen von Getreide, das Pflücken von
+          Früchten, das Sammeln von Gemüse und vieles mehr. Diese Maschinen sind
+          darauf ausgelegt, die Ernteprozesse zu beschleunigen und die
+          Arbeitskraft, die für die manuelle Ernte benötigt wird, zu ersetzen
+          oder zu reduzieren. Dadurch können Landwirte ihre Erntezeit verkürzen
+          und die Produktivität steigern.
+        </p>
+        <h2>Vielseitigkeit und Anpassungsfähigkeit</h2>
+        <p>
+          Ähnlich wie Traktoren sind auch Erntemaschinen äußerst vielseitig. Je
+          nach den Anforderungen der spezifischen Ernte können sie mit
+          verschiedenen Aufsätzen und Werkzeugen ausgestattet werden. Ein
+          Beispiel hierfür ist der Mähdrescher, der nicht nur das Getreide
+          schneidet, sondern auch die Körner vom Stroh trennt und sie in einem
+          integrierten Behälter sammelt. Diese Anpassungsfähigkeit ermöglicht
+          es, dass eine Erntemaschine für verschiedene Kulturen und Bedingungen
+          eingesetzt werden kann.
+        </p>
+        <h2>Technologische Innovationen in der Erntetechnik</h2>
+        <p>
+          Ähnlich wie bei Traktoren sind auch Erntemaschinen von technologischen
+          Fortschritten beeinflusst. Moderne Erntegeräte sind mit
+          fortschrittlichen Sensoren, GPS-Systemen und
+          Automatisierungstechnologien ausgestattet. Diese Innovationen
+          ermöglichen eine präzisere Ernte, eine optimierte Ausnutzung von
+          Ressourcen und tragen zur Reduzierung von Verschwendungen bei. Darüber
+          hinaus können Erntemaschinen Daten über die Qualität der Ernte
+          liefern, was Landwirten dabei hilft, ihre Anbaupraktiken zu
+          optimieren.
+        </p>
+        <h2>Erntemaschinen und die Landwirtschaft im globalen Kontext</h2>
+        <p>
+          Die Bedeutung von Erntemaschinen erstreckt sich über nationale Grenzen
+          hinaus und spielt eine Schlüsselrolle in der globalen
+          Lebensmittelproduktion. Durch den Einsatz effizienter Erntemaschinen
+          können Landwirte größere Mengen an Nahrungsmitteln produzieren, was
+          wiederum zur Sicherung der globalen Nahrungsmittelversorgung beiträgt.
+          Die Effizienzsteigerung durch Erntemaschinen ist von großer Bedeutung,
+          um die wachsende Weltbevölkerung zu ernähren und den Herausforderungen
+          der globalen Landwirtschaft gerecht zu werden.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Erntemaschinen sind unverzichtbare Werkzeuge in der modernen
+          Landwirtschaft. Ihre Vielseitigkeit, technologischen Fortschritte und
+          Beitrag zur Effizienzsteigerung machen sie zu unersetzbaren Helfern
+          für Landwirte weltweit. Die kontinuierliche Weiterentwicklung von
+          Erntemaschinen trägt dazu bei, die landwirtschaftlichen Prozesse
+          effizienter, nachhaltiger und produktiver zu gestalten. 
+          <br>
+          <br>
+          Hier sind einige der gängigsten Arten von Erntemaschinen
+          <a style="font-size: 20pt" class="here" href="#Menu">hier</a>
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh"></div>
+      <h1 style="font-size: 40pt" id="Menu">Arten der Erntemaschinen</h1>
+      <div class="Infobox" id="Menu">
+        <!--  -->
+        <div class="pictures">
+          <figure>
+            <img src="../img/trion.webp" alt="Lexion_menu" />
+            <figcaption><b>Mähdrescher</b></figcaption>
+          </figure>
+          <p>
+            Ein Mähdrescher ist eine landwirtschaftliche Maschine, die speziell
+            für die Ernte von Getreide entwickelt wurde. Mit seiner
+            beeindruckenden Technologie vereint er mehrere Funktionen in einem
+            Gerät. Der Mähdrescher schneidet die Getreidehalme ab, trennt die
+            Körner vom Stroh und sammelt sie in einem Behälter. Dadurch
+            ermöglicht er eine effiziente und zeitsparende Ernte. Mähdrescher
+            sind ein wichtiger Bestandteil der modernen Landwirtschaft und
+            tragen dazu bei, die Erträge zu maximieren. Ihre Leistung und
+            Effizienz sind beeindruckend und machen sie zu unverzichtbaren
+            Helfern auf dem Feld.
+            <br />
+            <br />
+            Erfahren Sie mehr über die Mähdrescher
+            <b><a href="combine_harvester.html">hier</a></b>
+          </p>
+        </div>
+        <!--  -->
+        <div class="pictures" id="I">
+          <figure>
+            <img
+              src="../img/Sugar_can_harvester.jpg"
+              alt="Zuckerrohrernter_Case"
+            />
+            <figcaption><b>Zuckerrohrernter</b></figcaption>
+          </figure>
+          <p>
+            Ein Zuckerrohrernter ist eine landwirtschaftliche Maschine, die
+            speziell für die Ernte von Zuckerrohr entwickelt wurde. Mit seiner
+            beeindruckenden Technologie vereint er mehrere Funktionen in einem
+            Gerät. Der Zuckerrohrernter schneidet das Zuckerrohr ab, trennt es
+            von den Blättern und sammelt es in einem Behälter. Dadurch
+            ermöglicht er eine effiziente und zeitsparende Ernte.
+            Zuckerrohrernter sind ein wichtiger Bestandteil der modernen
+            Zuckerrohrproduktion und tragen dazu bei, die Erträge zu maximieren.
+            Ihre Leistung und Effizienz sind beeindruckend und machen sie zu
+            unverzichtbaren Helfern auf dem Feld.
+            <br />
+            <br />
+
+            Erfahren Sie mehr über die Zuckerrohrernter
+            <b><a href="sugar_cane_harverster.html">hier</a></b>
+          </p>
+        </div>
+        <!--  -->
+        <div class="pictures">
+          <figure>
+            <img src="../img/Krone_feldhäcksler.jpg" alt="Krone-Feldhäcksler" />
+            <figcaption><b>Feldhäcksler</b></figcaption>
+          </figure>
+          <p>
+            Ein Feldhäcksler ist eine landwirtschaftliche Maschine, die speziell
+            für die Zerkleinerung von Pflanzenmaterial entwickelt wurde. Mit
+            seiner beeindruckenden Technologie vereint er mehrere Funktionen in
+            einem Gerät. Der Feldhäcksler schneidet die Pflanzen ab, zerkleinert
+            sie in kleine Stücke und sammelt sie in einem Behälter. Dadurch
+            ermöglicht er eine effiziente und zeitsparende Verarbeitung von
+            Pflanzenmaterial. Feldhäcksler sind ein wichtiger Bestandteil der
+            modernen Landwirtschaft und tragen dazu bei, das Pflanzenmaterial
+            für verschiedene Zwecke zu nutzen. Ihre Leistung und Effizienz sind
+            beeindruckend und machen sie zu unverzichtbaren Helfern auf dem
+            Feld.
+            <br />
+            <br />
+
+            Erfahren Sie mehr über die Feldhäcksler
+            <b><a href="chipper.html">hier</a></b>
+          </p>
+        </div>
+        <!--  -->
+        <div class="pictures" id="I">
+          <figure>
+            <img src="../img/Grimmer_potato.webp" alt="Grimme Kartoffelroder" />
+            <figcaption><b>Kartoffelroder</b></figcaption>
+          </figure>
+          <p>
+            Ein Kartoffelroder ist eine landwirtschaftliche Maschine, die
+            speziell für die Ernte von Kartoffeln entwickelt wurde. Ähnlich wie
+            ein Mähdrescher vereint er verschiedene Funktionen in einem Gerät.
+            Der Kartoffelroder schneidet die Kartoffelpflanzen ab, trennt die
+            Kartoffeln von der Erde und sammelt sie in einem Behälter. Dadurch
+            ermöglicht er eine effiziente und zeitsparende Ernte von Kartoffeln.
+            Kartoffelroder sind ein wichtiger Bestandteil der modernen
+            Landwirtschaft und tragen dazu bei, die Erträge zu maximieren. Ihre
+            Leistung und Effizienz sind beeindruckend und machen sie zu
+            unverzichtbaren Helfern auf dem Feld.
+            <br />
+            <br />
+
+            Erfahren Sie mehr über die Kartoffelroder
+            <b><a href="potato_harvester.html">hier</a></b>
+          </p>
+        </div>
+
+        <!--  -->
+        <div class="pictures">
+          <figure>
+            <img src="../img/Ropa.webp" alt="Roba Rübenroder" />
+            <figcaption><b>Rübenroder</b></figcaption>
+          </figure>
+          <p>
+            Ein Rübenroder ist eine landwirtschaftliche Maschine, die speziell
+            für die Ernte von Rüben entwickelt wurde. Mit seiner beeindruckenden
+            Technologie vereint er mehrere Funktionen in einem Gerät. Der
+            Rübenroder schneidet die Rüben von den Blättern ab, trennt sie vom
+            Boden und sammelt sie in einem Behälter. Dadurch ermöglicht er eine
+            effiziente und zeitsparende Ernte. Rübenroder sind ein wichtiger
+            Bestandteil der modernen Landwirtschaft und tragen dazu bei, die
+            Erträge zu maximieren. Ihre Leistung und Effizienz sind
+            beeindruckend und machen sie zu unverzichtbaren Helfern auf dem
+            Feld.
+            <br />
+            <br />
+
+            Erfahren Sie mehr über die Rübenroder
+            <b><a href="sugar_roder.html">hier</a></b>
+          </p>
+        </div>
+
+        <div class="plh"></div>
+        <!--  -->
+      </div>
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

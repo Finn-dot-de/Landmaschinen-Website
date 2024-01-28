@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Geräte Startseite</title>
+    <link rel="icon" href="../img/Geräte.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img class="pic" src="../img/Geräte.ico" alt="Geräte-Logo" />
+            Geräte Startseite
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <!-- Erntemaschinen -->
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Geräte -->
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="spritzen.html">Spritzen</a></li>
+              <li><a href="seed.html">Säetechnik</a></li>
+              <li><a href="ground.html">Bodentechnik</a></li>
+              <li><a href="mist.html">Düngetechnik</a></li>
+              <li><a href="balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_ge"
+          src="../img/Krone_Presse.jpg"
+          alt="utilitis_main_imgage"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>
+          Landwirtschaftliche Maschinen: Motoren der Fortschrittlichkeit auf dem
+          Feld
+        </h1>
+        <p>
+          Landwirtschaftliche Maschinen stellen eine entscheidende Innovation in
+          der Landwirtschaft dar. Ihr Einfluss auf landwirtschaftliche Prozesse
+          hat die Effizienz und Produktivität auf den Feldern weltweit
+          nachhaltig verbessert. Hier sind einige der gängigsten Arten von
+          Geräten
+          <a style="font-size: 24pt" class="here" href="#Menu">hier</a>
+        </p>
+        <h2>Was charakterisiert landwirtschaftliche Maschinen?</h2>
+        <p>
+          Landwirtschaftliche Maschinen umfassen eine breite Palette von
+          Geräten, die speziell für verschiedene Aufgaben im
+          landwirtschaftlichen Bereich entwickelt wurden. Dazu gehören
+          Traktoren, Pflüge, Sämaschinen, Düngerstreuer und Erntemaschinen, um
+          nur einige zu nennen. Diese Maschinen spielen eine entscheidende Rolle
+          bei der Bewältigung verschiedener landwirtschaftlicher
+          Herausforderungen.
+        </p>
+        <h2>Die Funktionsweise im Detail</h2>
+        <p>
+          Je nach Typ führen landwirtschaftliche Maschinen unterschiedliche
+          Aufgaben aus. Traktoren dienen beispielsweise dem Pflügen,
+          Transportieren und anderen vielseitigen Aufgaben. Sämaschinen
+          ermöglichen eine präzise Aussaat von Saatgut, während Düngerstreuer
+          die optimale Verteilung von Nährstoffen gewährleisten. Die
+          kontinuierliche Weiterentwicklung dieser Maschinen trägt dazu bei, die
+          landwirtschaftlichen Prozesse effizienter zu gestalten.
+        </p>
+        <h2>Die Bedeutung landwirtschaftlicher Maschinen</h2>
+        <p>
+          Landwirtschaftliche Maschinen haben die Landwirtschaft revolutioniert,
+          indem sie den Zeit- und Arbeitsaufwand erheblich reduziert haben.
+          Früher erforderten landwirtschaftliche Tätigkeiten eine große Anzahl
+          von Arbeitskräften und waren zeitaufwändig. Mit Hilfe dieser Maschinen
+          können Landwirte heute effizienter arbeiten, große Flächen
+          bewirtschaften und höhere Erträge erzielen.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Landwirtschaftliche Maschinen sind unverzichtbare Partner in der
+          modernen Landwirtschaft. Ihr Beitrag zur Effizienzsteigerung und
+          Produktivitätssteigerung ermöglicht es Landwirten, den
+          Herausforderungen der Nahrungsmittelproduktion erfolgreich zu
+          begegnen. Durch ständige Innovationen werden landwirtschaftliche
+          Maschinen auch in Zukunft eine zentrale Rolle spielen und die
+          Landwirtschaft weiter vorantreiben.
+        </p>
+      </div>
+      <!--  -->
+      <div class="plh"></div>
+      <div class="plh"></div>
+      <h1 style="font-size: 40pt" id="Menu">Arten der Geräte</h1>
+      <!--  -->
+      <div class="Infobox">
+        <div class="pictures">
+          <figure>
+            <img src="../img/ball.jpeg" alt="Ballenpresse_menu" />
+            <figcaption><b>Ballentechnik</b></figcaption>
+          </figure>
+          <p>
+            Die Ballentechnik ist ein wesentlicher Bestandteil der modernen
+            Landwirtschaft und bietet effiziente Lösungen für die Sammlung,
+            Lagerung und den Transport von Erntegut. Sie umfasst verschiedene
+            Maschinen und Geräte, die speziell für die Verarbeitung von Heu,
+            Stroh, oder Silage entwickelt wurden. Diese Maschinen arbeiten
+            zusammen, um das Erntegut in kompakte, leicht transportierbare
+            Ballen zu formen. Ein wichtiger Bestandteil der Ballentechnik ist
+            auch der Ballenwickler, der es ermöglicht, Ballen mit Folie zu
+            umwickeln, um sie vor Witterungseinflüssen zu schützen und ihre
+            Haltbarkeit zu erhöhen.
+            <br />
+            <br />
+            Erfahren Sie mehr über die Ballentechnik
+            <a href="balltech.html">hier</a>.
+          </p>
+        </div>
+        <!--  -->
+        <div class="pictures" id="I">
+          <figure>
+            <img src="../img/Horsch_sämaschine.jpeg" alt="Saatmaschine_menu" />
+            <figcaption><b>Sätechnik</b></figcaption>
+          </figure>
+          <p>
+            Die Sätechnik ist ein entscheidender Aspekt der modernen
+            Landwirtschaft und spielt eine zentrale Rolle bei der Pflanzenzucht.
+            Sämaschinen sind speziell entwickelte Geräte, die es ermöglichen,
+            Samen präzise und effizient in den Boden zu bringen. Durch die
+            präzise Platzierung der Samen wird eine gleichmäßige Keimung und ein
+            optimales Pflanzenwachstum gewährleistet. Moderne Sämaschinen
+            verfügen über fortschrittliche Technologien wie GPS-gesteuerte
+            Systeme und automatische Überwachungsfunktionen, die eine genaue
+            Saatgutdosierung und Spuranpassung ermöglichen.
+            <br />
+            <br />
+            Erfahren Sie mehr über Sätechnik <a href="seed.html">hier</a>.
+          </p>
+        </div>
+
+        <!--  -->
+        <div class="pictures">
+          <figure>
+            <img src="../img/Spritezn.jpeg" alt="Spritze_menu" />
+            <figcaption><b>Spritzen</b></figcaption>
+          </figure>
+          <p>
+            Die Spritzentechnik ist ein wichtiger Bestandteil der modernen
+            Landwirtschaft und bezieht sich auf die gezielte Anwendung von
+            Pflanzenschutzmitteln, Düngemitteln oder anderen chemischen
+            Substanzen auf landwirtschaftlichen Flächen. Spritzen sind speziell
+            entwickelte Maschinen, die es Landwirten ermöglichen, die
+            notwendigen Produkte präzise und effizient auf den Feldern zu
+            verteilen. Moderne Spritztechnologien umfassen fortschrittliche
+            Funktionen wie GPS-Steuerung, automatische Abschaltung und variable
+            Dosierung, die eine präzise Anwendung und eine minimale
+            Umweltbelastung gewährleisten.
+            <br />
+            <br />
+            Erfahren Sie mehr über Spritzentechnik
+            <a href="spritzen.html">hier</a>.
+          </p>
+        </div>
+
+        <!--  -->
+        <div class="pictures" id="I">
+          <figure>
+            <img src="../img/Grubber.jpeg" alt="Bodentechnik_menu" />
+            <figcaption><b>Bodentechnik</b></figcaption>
+          </figure>
+          <p>
+            Die Bodentechnik in der Landwirtschaft umfasst eine Vielzahl von
+            Geräten und Maschinen, die für die Bodenbearbeitung, -pflege und
+            -verbesserung verwendet werden. Dazu gehören Geräte wie Grubber,
+            Scheibeneggen, Pflüge und Walzen, die speziell dafür entwickelt
+            wurden, um den Boden vorzubereiten, Unkraut zu bekämpfen, die
+            Bodenstruktur zu verbessern und die Saatbettvorbereitung zu
+            unterstützen.
+            <br />
+            <br />
+            Erfahren Sie mehr über Bodentechnik
+            <a href="ground.html">hier</a>.
+          </p>
+        </div>
+
+        <!--  -->
+        <div class="pictures">
+          <figure>
+            <img src="../img/dünger.jpeg" alt="Düngetechnik_menu" />
+            <figcaption><b>Düngetechnik</b></figcaption>
+          </figure>
+          <p>
+            Die Düngetechnik in der Landwirtschaft umfasst eine Vielzahl von
+            Geräten und Methoden, um Nährstoffe wie Stickstoff, Phosphor und
+            Kalium gezielt auf die Felder auszubringen, um das Pflanzenwachstum
+            zu fördern und die Ernteerträge zu steigern. Zu den verbreiteten
+            Düngetechniken gehören Streuen, Sprühen, Injizieren und Ausbringen
+            von Flüssigdünger.
+            <br />
+            <br />
+            Erfahren Sie mehr über Düngetechnik
+            <a href="mist.html">hier</a>.
+          </p>
+        </div>
+
+        <div class="plh"></div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

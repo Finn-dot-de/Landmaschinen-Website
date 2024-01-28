@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Düngetechnik</title>
+    <link rel="icon" href="../img/Geräte.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img class="pic" src="../img/Geräte.ico" alt="Geräte-Logo" />
+            Düngetechnik
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <!-- Erntemaschinen -->
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Geräte -->
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_ge"
+          src="../img/unia_rcw_45_id254966.jpg"
+          alt="trecker_main_imgage"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>Düngetechnik: Effiziente Lösungen für die Landwirtschaft</h1>
+        <p>
+          Die Düngetechnik ist ein wesentlicher Bestandteil der modernen
+          Landwirtschaft und hat die Art und Weise, wie Nährstoffe auf Feldern
+          appliziert werden, revolutioniert.
+        </p>
+        <h2>Was charakterisiert die Düngetechnik?</h2>
+        <p>
+          Die Düngetechnik umfasst verschiedene Methoden und Geräte, die
+          speziell für die gezielte Zufuhr von Nährstoffen wie Stickstoff,
+          Phosphor und Kalium entwickelt wurden. Diese Geräte arbeiten zusammen,
+          um Dünger in Form von Feststoffen, Flüssigkeiten oder Gasen
+          gleichmäßig auf die Felder auszubringen. Moderne Düngemaschinen sind
+          oft mit GPS-Technologie ausgestattet, um eine präzise Ausbringung zu
+          gewährleisten und Überlappungen zu vermeiden, was sowohl die Effizienz
+          als auch die Umweltverträglichkeit verbessert.
+        </p>
+        <h2>Die Funktionsweise im Detail</h2>
+        <p>
+          Die Düngetechnik beginnt mit der Analyse des Bodens, um den
+          Nährstoffbedarf der Pflanzen zu bestimmen. Basierend auf diesen
+          Erkenntnissen wird der Dünger ausgewählt und in die Düngemaschine
+          geladen. Während der Feldarbeit wird der Dünger dann präzise auf die
+          Felder ausgebracht, entweder vor oder nach dem Pflanzenwachstum, je
+          nach den Anforderungen der Kulturen und den agronomischen
+          Empfehlungen. Dieser Prozess zielt darauf ab, eine optimale
+          Nährstoffversorgung der Pflanzen sicherzustellen und somit den Ertrag
+          und die Qualität der Ernte zu maximieren.
+        </p>
+        <h2>Die Bedeutung dieser Technologie</h2>
+        <p>
+          Die Düngetechnik spielt eine entscheidende Rolle bei der
+          Sicherstellung einer ausreichenden Versorgung der Pflanzen mit
+          Nährstoffen, was wiederum die Produktivität und Rentabilität
+          landwirtschaftlicher Betriebe steigert. Durch die präzise Dosierung
+          und Ausbringung von Dünger können Landwirte nicht nur die Ernteerträge
+          optimieren, sondern auch Umweltbelastungen wie Überdüngung und
+          Auswaschung von Nährstoffen reduzieren. Darüber hinaus trägt eine
+          effiziente Düngetechnik zur Schonung natürlicher Ressourcen und zur
+          Förderung einer nachhaltigen Landwirtschaft bei.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Die Düngetechnik ist ein unverzichtbares Werkzeug für Landwirte, um
+          die Herausforderungen im Bereich der Nährstoffversorgung von Pflanzen
+          zu bewältigen. Durch ihre Effizienz und Präzision ermöglicht sie eine
+          optimale Nutzung von Düngemitteln und trägt damit zur Steigerung der
+          Erträge und zur Sicherung der Nahrungsmittelproduktion bei. Mit
+          kontinuierlichen Innovationen wird die Düngetechnik auch weiterhin
+          eine zentrale Rolle spielen, um den Anforderungen einer wachsenden
+          Weltbevölkerung gerecht zu werden und gleichzeitig die Umwelt zu
+          schützen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Mehr Infos zu der Ballentechnik</h1>
+      </div>
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/Düngestreuer.jpeg"
+              alt="JohnDeereX9"
+              height="266px"
+            />
+            <div
+              onclick="toggleChipper('JohnDeereX9')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="JohnDeereX9" class="sized">
+                <ul>
+                  <li><strong>Durchsatz:</strong> 100 t/h</li>
+                  <li><strong>Arbeitsbreite:</strong> 13,7 m</li>
+                  <li><strong>Kanalbreite:</strong> 1720 mm</li>
+                  <li><strong>Effektiver Druschbereich:</strong> 4,00 m²</li>
+                  <li><strong>Rotor-Abscheidefläche:</strong> 22,50 m²</li>
+                  <li><strong>Siebkastenfläche:</strong> 7,00 m²</li>
+                  <li>
+                    <strong>Motorleistung:</strong> 470 kW/639 PS
+                    (13,6-Liter-Motor)
+                  </li>
+                  <li><strong>Kraftstofftankvolumen:</strong> 14 h</li>
+                  <li><strong>Sicherheit:</strong> 24-7</li>
+                  <li><strong>Kabine:</strong> Neue, leise Ausführung</li>
+                  <li>
+                    <strong>Automatisierung:</strong> Combine Advisor für
+                    stressfreie Bedienung
+                  </li>
+                  <li><strong>Konnektivität:</strong> JDLink, DataConnect</li>
+                  <li><strong>Farmmanagement:</strong> Operations Center</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Amazon Düngerstreuer</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/dünger.jpeg" height="266px" alt="Claas-Trion" />
+            <div
+              onclick="toggleChipper('Claas_Trion_750')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="Claas_Trion_750" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>AMAZONE Düngemaschine</figcaption>
+        </figure>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Videos zur Ballentechnik</h1>
+      </div>
+      <div class="Infobox">
+        <div class="videocontainer">
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/Mist  Kompost streuen Großtraktor Claas Xerion Tebbe Streuer Lohnunternehmen Düngung Landwirtschaft.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/KUHN New AXIS series 2 - Fertiliser Spreaders (In action).mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <br />
+      </div>
+      <br />
+      <br />
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Bodentechnik</title>
+    <link rel="icon" href="../img/Geräte.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img class="pic" src="../img/Geräte.ico" alt="Geräte-Logo" />
+            Bodentechnik
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="../traktoren/index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../traktoren/kompakttraktoren.html"
+                  >Kompakttraktoren</a
+                >
+              </li>
+              <li>
+                <a href="../traktoren/medium.html">Mittelgroße Traktoren</a>
+              </li>
+              <li><a href="../traktoren/bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <!-- Erntemaschinen -->
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Geräte -->
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_ge"
+          src="../img/csm_Bild_5_Terrano_FX_9f51b4544c.jpg"
+          alt="trecker_main_imgage"
+        />
+      </div>
+      <div class="Infobox">
+        <h1>Bodentechnik: Effiziente Lösungen für die Landwirtschaft</h1>
+        <p>
+          Die Bodentechnik ist ein unverzichtbarer Bestandteil der modernen
+          Landwirtschaft und hat die Art und Weise, wie Boden bearbeitet,
+          gepflegt und genutzt wird, revolutioniert.
+        </p>
+        <h2>Was charakterisiert die Bodentechnik?</h2>
+        <p>
+          Die Bodentechnik umfasst verschiedene Maschinen und Geräte, die
+          speziell für die Bearbeitung und Pflege des Bodens entwickelt wurden.
+          Diese Geräte arbeiten zusammen, um den Boden zu lockern, zu pflügen,
+          zu eggen oder zu säen, was zu einer optimalen Vorbereitung für das
+          Pflanzenwachstum führt. Darüber hinaus können bestimmte
+          Bodenbearbeitungsmaschinen mit Sensoren ausgestattet sein, die den
+          Feuchtigkeits- und Nährstoffgehalt des Bodens messen, um eine gezielte
+          Bewässerung und Düngung zu ermöglichen.
+        </p>
+        <h2>Die Funktionsweise im Detail</h2>
+        <p>
+          Die Bodentechnik beginnt mit der Vorbereitung des Bodens, indem er
+          gelockert und von Unkräutern befreit wird. Anschließend werden Saatgut
+          oder Pflanzen mithilfe von spezialisierten Maschinen in den Boden
+          eingebracht. Während des Wachstumszyklus können weitere
+          Bodenbearbeitungsmaßnahmen erforderlich sein, um Unkraut zu bekämpfen,
+          den Boden zu belüften oder Nährstoffe zuzuführen. Diese
+          kontinuierliche Pflege des Bodens trägt dazu bei, die Qualität und den
+          Ertrag der Ernte zu maximieren.
+        </p>
+        <h2>Die Bedeutung dieser Technologie</h2>
+        <p>
+          Die Bodentechnik hat die Landwirtschaft nachhaltig verändert, indem
+          sie effiziente und präzise Methoden zur Bodenbearbeitung und -pflege
+          bietet. Durch die Nutzung dieser Technologie können Landwirte ihre
+          Ernteerträge steigern, die Bodenfruchtbarkeit verbessern und
+          gleichzeitig Ressourcen wie Wasser und Düngemittel einsparen. Darüber
+          hinaus trägt eine gesunde Bodenstruktur dazu bei, Erosion zu
+          verhindern und die Umwelt zu schützen.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Die Bodentechnik ist ein wesentlicher Bestandteil der modernen
+          Landwirtschaft, der dazu beiträgt, die Herausforderungen im Anbau von
+          Nahrungsmitteln zu bewältigen. Mit fortschreitender Technologie und
+          Innovation wird die Bodentechnik auch weiterhin eine entscheidende
+          Rolle spielen, um eine nachhaltige und produktive Landwirtschaft zu
+          fördern und die Bedürfnisse einer wachsenden Bevölkerung zu erfüllen.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Mehr Infos zu der Ballentechnik</h1>
+      </div>
+      <div class="Infobox" id="imgagebox">
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/Lemken_grubber.webp"
+              alt="JohnDeereX9"
+              height="266px"
+            />
+            <div
+              onclick="toggleChipper('JohnDeereX9')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="JohnDeereX9" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>John Deere Presswickelcompi</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img
+              src="../img/amazon_scheibenegge.jpeg"
+              height="266px"
+              alt="Claas-Trion"
+            />
+            <div
+              onclick="toggleChipper('Claas_Trion_750')"
+              class="symbol_info"
+              data-chipper="#"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="Claas_Trion_750" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>New Holland BigBaller</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/Grubber.jpeg" alt="Massey Ferguson" />
+            <div
+              onclick="toggleChipper('massey_fugerson_ideal_mf')"
+              class="symbol_info"
+              data-chipper="massey_fugerson_ideal_mf"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="massey_fugerson_ideal_mf" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Fendt Quader Ballenpresse</figcaption>
+        </figure>
+        <br />
+        <figure>
+          <div class="symbol_info_box">
+            <img src="../img/Download.jpeg" alt="CR_10.90" />
+            <div
+              onclick="toggleChipper('New_Holland_CR_10')"
+              class="symbol_info"
+              data-chipper="New_Holland_CR_10"
+            >
+              ⓘ
+              <!-- box -->
+              <div id="New_Holland_CR_10" class="sized">
+                <ul>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #.# #</li>
+                  <li><strong>#:</strong> #</li>
+                  <li><strong>#:</strong> # #</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Krone Quaderballenpresse</figcaption>
+        </figure>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Videos zur Bodentechnik</h1>
+      </div>
+      <div class="Infobox">
+        <div class="videocontainer">
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/Tigermate 200 cultivator in action.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <video
+            height="600px"
+            controls
+            src="/img/video.mp4/KUHN PERFORMER - Deep working cultivators (In action).mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <br />
+      </div>
+      <br />
+      <br />
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>

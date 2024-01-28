@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/sub_sites.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/general-settings.css" />
+    <meta name="author" content="Finn" />
+    <script src="../script.js"></script>
+    <title>Traktoren Startseite</title>
+    <link rel="icon" href="../img/Traktor.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="headline">
+          <a class="logo">
+            <img class="pic" src="../img/Traktor.ico" alt="Traktor-Logo" />
+            Traktoren
+          </a>
+        </div>
+        <input type="checkbox" id="toggle_button" />
+        <label for="toggle_button" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul>
+          <li class="expandable_li">
+            <a href="../index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="start()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Startseite Landmaschinen</label
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
+          <li class="expandable_li">
+            <a href="index.html"
+              ><input type="checkbox" id="chapter1_checkbox" />
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
+                >Traktoren</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="kompakttraktoren.html">Kompakttraktoren</a></li>
+              <li><a href="medium.html">Mittelgroße Traktoren</a></li>
+              <li><a href="bigsized.html">Groß Traktoren</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../erntemaschinen/index.html"
+              ><input type="checkbox" id="chapter2_checkbox" />
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
+                >Erntemaschinen</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="../erntemaschinen/combine_harvester.html"
+                  >Mähdrescher</a
+                >
+              </li>
+              <li>
+                <a href="../erntemaschinen/sugar_roder.html">Rübenroder</a>
+              </li>
+              <li>
+                <a href="../erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
+              <li><a href="../erntemaschinen/chipper.html">Feldhäcksler</a></li>
+              <li>
+                <a href="../erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <a href="../geräte/index.html"
+              ><input type="checkbox" id="chapter3_checkbox" />
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
+                >Geräte</label
+              ></a
+            >
+            <ul class="dropdown">
+              <li><a href="../geräte/spritzen.html">Spritzen</a></li>
+              <li><a href="../geräte/seed.html">Säetechnik</a></li>
+              <li><a href="../geräte/ground.html">Bodentechnik</a></li>
+              <li><a href="../geräte/mist.html">Düngetechnik</a></li>
+              <li><a href="../geräte/balltech.html">Ballentechnik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <div id="main_banner">
+        <img
+          id="main_banner_tr"
+          src="../img/trecker_main_imgage.jpg"
+          alt="trecker_main_imgage"
+        />
+      </div>
+      <div class="plh"></div>
+      <div class="plh"></div>
+      <div class="Infobox">
+        <h1>Was sind Traktoren?</h1>
+        <p>
+          Traktoren sind vielseitige landwirtschaftliche Fahrzeuge, die für eine
+          breite Palette von Aufgaben auf dem Feld eingesetzt werden. Ihr
+          robustes Design und ihre Leistungsfähigkeit machen sie zu
+          unverzichtbaren Arbeitsgeräten für Landwirte weltweit. Traktoren
+          werden nicht nur für das Pflügen, Aussäen und Düngen eingesetzt,
+          sondern auch für den Transport von Materialien und die Bewirtschaftung
+          großer Flächen. Hier sind einige der gängigsten Arten von Traktoren
+          <a style="font-size: 25pt;" class="here" href="#Menu">hier</a>.
+        </p>
+        <h2>Die Vielseitigkeit von Traktoren</h2>
+        <p>
+          Ein großer Vorteil von Traktoren liegt in ihrer Vielseitigkeit. Sie
+          können mit verschiedenen Anbaugeräten und Werkzeugen ausgestattet
+          werden, um den spezifischen Anforderungen der jeweiligen
+          landwirtschaftlichen Aufgabe gerecht zu werden. Ob es sich um einen
+          Pflug für die Bodenbearbeitung, einen Saatkasten für das Aussäen oder
+          einen Anhänger für den Transport handelt, Traktoren passen sich
+          flexibel an die Bedürfnisse des Landwirts an.
+        </p>
+        <h2>Technologische Innovationen in der Traktorentechnik</h2>
+        <p>
+          Die fortschreitende Technologie hat auch vor Traktoren nicht Halt
+          gemacht. Moderne Traktoren sind mit GPS-gesteuerten Systemen
+          ausgestattet, die eine präzise Feldnavigation ermöglichen. Diese
+          Technologien erhöhen nicht nur die Effizienz, sondern tragen auch zur
+          nachhaltigen Landwirtschaft bei, indem sie den Einsatz von Ressourcen
+          optimieren und Umweltauswirkungen minimieren.
+        </p>
+        <h2>Traktoren und die Globalisierung der Landwirtschaft</h2>
+        <p>
+          Traktoren haben eine entscheidende Rolle in der Globalisierung der
+          Landwirtschaft gespielt. Durch ihre Effizienzsteigerung ermöglichen
+          sie eine produktivere Landwirtschaft, die den steigenden Anforderungen
+          an Lebensmittelproduktion gerecht wird. Dies ist besonders wichtig
+          angesichts der wachsenden Weltbevölkerung und des Bedarfs an einer
+          nachhaltigen, effizienten Nahrungsmittelversorgung.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Traktoren sind unverzichtbare Partner in der modernen Landwirtschaft.
+          Ihre Vielseitigkeit, technologischen Innovationen und Beitrag zur
+          globalen Nahrungsmittelproduktion machen sie zu einem Eckpfeiler für
+          Landwirte weltweit. Durch kontinuierliche Weiterentwicklungen tragen
+          Traktoren dazu bei, die Landwirtschaft effizienter und nachhaltiger zu
+          gestalten.
+        </p>
+      </div>
+      <div class="plh"></div>
+      <div class="plh">
+        <h1>Arten der Traktoren</h1>
+      </div>
+      <div class="Infobox" id="Menu">
+        <div class="pictures">
+          <figure>
+            <img src="../img/Claas_Xerion.jpg" alt="Xerion_menu" />
+            <figcaption><b>Großtraktoren</b></figcaption>
+          </figure>
+          <p>
+            Ein Großtraktor ist eine leistungsstarke landwirtschaftliche
+            Maschine, speziell für anspruchsvolle Feldarbeiten entwickelt. Er
+            kombiniert fortschrittliche Technologie in einem robusten Gerät und
+            bewältigt Aufgaben wie Bodenbearbeitung, Pflügen und das Ziehen
+            schwerer Lasten. Dank seiner starken Motoren kann der Großtraktor
+            effizient den Acker bearbeiten. In der modernen Landwirtschaft
+            spielt er eine Schlüsselrolle, um die Produktivität zu steigern. Die
+            beeindruckende Leistung macht ihn zu einem unverzichtbaren Helfer
+            auf dem Feld.
+            <br />
+            <br />
+
+            Erfahren Sie mehr über Großtraktoren
+            <a href="bigsized.html">hier</a>
+          </p>
+        </div>
+        <div class="pictures" id="I">
+          <figure>
+            <img
+              src="../img/T4.jpg"
+              alt="new-Holland-T4"
+            />
+            <figcaption><b>Kompakttraktoren</b></figcaption>
+          </figure>
+          <p>
+            Ein Kompakttraktor ist eine vielseitige landwirtschaftliche
+            Maschine, speziell für kleinere Felder und anspruchsvolle Aufgaben
+            konzipiert. Mit fortschrittlicher Technologie vereint er
+            verschiedene Funktionen in einem kompakten Gerät und bewältigt
+            Aufgaben wie Bodenbearbeitung, Pflügen und das Bewegen von Material.
+            Dank seiner kompakten Größe ist der Kompakttraktor besonders wendig
+            und eignet sich gut für den Einsatz in begrenzten Räumen. Trotz
+            seiner kompakten Bauweise bietet er leistungsstarke Motoren, um
+            effizient den Acker zu bearbeiten. Kompakttraktoren sind
+            unverzichtbare Helfer für kleinere landwirtschaftliche Betriebe und
+            Gartenbauunternehmen.
+            <br />
+            <br />
+            Erfahren Sie mehr über Kompakttraktoren
+            <b><a href="kompakttraktoren.html">hier</a></b>
+          </p>
+        </div>
+        <!--  -->
+        <div class="pictures">
+          <figure>
+            <img src="../img/Valtra.jpg" alt="Valtra" />
+            <figcaption><b>Mittelgroße Traktoren</b></figcaption>
+          </figure>
+          <p>
+            Ein mittelgroßer Traktor ist eine vielseitige landwirtschaftliche
+            Maschine, die für eine breite Palette von Anwendungen konzipiert
+            ist. Mit fortschrittlicher Technologie vereint er verschiedene
+            Funktionen in einem effizienten Gerät und bewältigt Aufgaben wie
+            Bodenbearbeitung, Pflügen und das Bewegen von Lasten. Durch seine
+            mittelgroße Bauweise bietet der Traktor eine ausgewogene Kombination
+            aus Leistung und Wendigkeit. Er eignet sich gut für mittelgroße
+            landwirtschaftliche Betriebe und erfüllt die Anforderungen
+            verschiedener Anwendungen. Die robuste Konstruktion und die
+            leistungsstarken Motoren machen mittelgroße Traktoren zu
+            zuverlässigen Partnern in der modernen Landwirtschaft. 
+            <br> 
+            <br>  
+            Erfahren Sie mehr über mittelgroße Traktoren
+            <b><a href="medium.html">hier</a></b>
+          </p>
+        </div>
+      </div>
+      <div class="plh"></div>
+      <!--  -->
+    </section>
+    <footer>
+      <div id="footer_links">
+        <a href="../index.html">Startseite Landmaschinen</a>
+        <a href="../traktoren/index.html">Traktoren</a>
+        <a href="../erntemaschinen/index.html">Erntemaschinen</a>
+        <a href="../geräte/index.html">Geräte</a>
+      </div>
+    </footer>
+  </body>
+</html>
