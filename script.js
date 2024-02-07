@@ -3,7 +3,6 @@ function video_volume(){
   video.volume = 0.1;
 }
 
-
 function start() {
   window.location.href = "../index.html";
 }
