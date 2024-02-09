@@ -17,12 +17,13 @@
 }
 
 #main_banner_mäh {
-  height: 50%;
-  width: auto;
+  height: 700px;
+  width: 1200px;
 }
 
 #main_banner_ge {
-  height: 960px;
+  height: 660px;
+  width: 1100px;
 }
 
 .plh {

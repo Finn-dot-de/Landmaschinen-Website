@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="CSS/navbar.css" />
     <link rel="stylesheet" href="CSS/general-settings.css" />
     <meta name="author" content="Finn" />
-    <script src="script.js"></script>
+    <script>
+      function trecker() {
+        window.location.href = "./traktoren/index.html";
+      }
+
+      function ernte() {
+        window.location.href = "./erntemaschinen/index.html";
+      }
+
+      function gerate() {
+        window.location.href = "./geräte/index.html";
+      }
+    </script>
     <title>Landmaschinen</title>
     <link rel="icon" href="img/main_logo.ico" />
   </head>
@@ -34,19 +46,28 @@
           <li class="expandable_li">
             <a href="../index.html"
               ><input type="checkbox" id="chapter1_checkbox" />
-              <label onclick="start()" id="label" class="label_menu" for="chapter1_checkbox"
+              <label id="label" class="label_menu" for="chapter1_checkbox"
                 >Startseite Landmaschinen</label
-              ></a>
-          <!-- Traktoren -->
+              ></a
+            >
+            <!-- Traktoren -->
+          </li>
+
           <li class="expandable_li">
             <a href="traktoren/index.html"
               ><input type="checkbox" id="chapter1_checkbox" />
-              <label onclick="trecker()" id="label" class="label_menu" for="chapter1_checkbox"
+              <label
+                onclick="trecker()"
+                id="label"
+                class="label_menu"
+                for="chapter1_checkbox"
                 >Traktoren</label
               ></a
             >
             <ul class="dropdown">
-              <li><a href="traktoren/kompakttraktoren.html">Kompakttraktoren</a></li>
+              <li>
+                <a href="traktoren/kompakttraktoren.html">Kompakttraktoren</a>
+              </li>
               <li><a href="traktoren/medium.html">Mittelgroße Traktoren</a></li>
               <li><a href="traktoren/bigsized.html">Groß Traktoren</a></li>
             </ul>
@@ -54,22 +75,40 @@
           <li class="expandable_li">
             <a href="erntemaschinen/index.html"
               ><input type="checkbox" id="chapter2_checkbox" />
-              <label onclick="ernte()" id="label" class="label_menu" for="chapter2_checkbox"
+              <label
+                onclick="ernte()"
+                id="label"
+                class="label_menu"
+                for="chapter2_checkbox"
                 >Erntemaschinen</label
               ></a
             >
             <ul class="dropdown">
-              <li><a href="erntemaschinen/combine_harvester.html">Mähdrescher</a></li>
+              <li>
+                <a href="erntemaschinen/combine_harvester.html">Mähdrescher</a>
+              </li>
               <li><a href="erntemaschinen/sugar_roder.html">Rübenroder</a></li>
-              <li><a href="erntemaschinen/potato_harvester.html">Kartoffelroder</a></li>
+              <li>
+                <a href="erntemaschinen/potato_harvester.html"
+                  >Kartoffelroder</a
+                >
+              </li>
               <li><a href="erntemaschinen/chipper.html">Feldhäcksler</a></li>
-              <li><a href="erntemaschinen/sugar_cane_harverster.html">Zuckerrohrernter</a></li>
+              <li>
+                <a href="erntemaschinen/sugar_cane_harverster.html"
+                  >Zuckerrohrernter</a
+                >
+              </li>
             </ul>
           </li>
           <li class="expandable_li">
             <a href="geräte/index.html"
               ><input type="checkbox" id="chapter3_checkbox" />
-              <label onclick="gerate()" id="label" class="label_menu" for="chapter3_checkbox"
+              <label
+                onclick="gerate()"
+                id="label"
+                class="label_menu"
+                for="chapter3_checkbox"
                 >Geräte</label
               ></a
             >
@@ -89,14 +128,16 @@
         <div id="main_banner">
           <div id="first_banner">
             <img
-              class="banner" style="height: 600px; width: auto"
+              class="banner"
+              style="height: 500px; width: auto"
               src="img/003_axion900hrc_2020_assistance-stage-pic-1.jpg"
               alt="Main_Banner_Claas_Trecker"
             />
           </div>
           <div id="second_banner">
             <img
-              class="banner" style="height: 600px; width: auto"
+              class="banner"
+              style="height: 500px; width: auto"
               src="img/fiches_Claas_Trion_HD-1000x562.jpg"
               alt="class_trion"
             />
@@ -115,4 +156,3 @@
     </div>
   </body>
 </html>
-
